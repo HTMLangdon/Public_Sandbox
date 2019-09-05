@@ -1,0 +1,14 @@
+{
+    "files": [
+        "src/assets/ts/index.ts",
+        "src/assets/ts/page-1.ts",
+        "src/assets/ts/page-2.ts"
+    ],
+    "compilerOptions": {
+        "module": "system",
+        "noImplicitAny": true,
+        "target": "es2015",
+        "esModuleInterop": true
+    }
+}
+
