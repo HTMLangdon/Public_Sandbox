@@ -5,9 +5,9 @@
         "src/assets/ts/page-2.ts"
     ],
     "compilerOptions": {
-        "module": "system",
-        "noImplicitAny": true,
         "target": "es2015",
+        "noImplicitAny": true,
+        "suppressImplicitAnyIndexErrors": true,
         "esModuleInterop": true
     }
 }

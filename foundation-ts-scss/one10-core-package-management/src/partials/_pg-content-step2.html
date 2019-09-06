@@ -1,0 +1,140 @@
+<div class="grid-x align-left">
+    <div class="cell">
+        <h2>Define Participants</h2>
+    </div>
+</div>
+
+<div class="grid-x">
+    <fieldset class="cell large-12">
+        <legend class="cell large-12">
+            <span>Do you want participants to be automatically enrolled?</span><span class="notation-mark">*</span>
+            <!-- <p class="notation-body normal" style="font-size:12px;"> -->
+            <p class="notation-body normal">
+                If new participants meet the filter criteria they will be automatically be enrolled throughout the
+                deferred rebate period
+            </p>
+        </legend>
+
+        <div class="grid-x">
+            <div class="cell small-6 medium-4 large-3">
+                <div class="grid-x  align-right">
+                    <div class="cell small-6">
+                        {{>_radio type="radio" value="Yes" group="rPAE" id="r-PAE-yes"}}
+                    </div>
+                    <div class="cell small-6">
+                        {{>_radio type="radio" value="No" group="rPAE" id="r-PAE-no"}}
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </fieldset>
+    
+</div>
+
+
+
+
+<div class="grid-x">
+    <fieldset class="cell small-12 medium-8 large-5">
+        <div class="grid-x  align-right">
+            <legend class="cell large-12">
+                <span>Customer Level</span> <span class="notation-mark">*</span>
+            </legend>
+            <div class="cell small-6 medium-6">
+                {{>_radio type="radio" value="Highest Level Customer" group="rPCT" id="r-gl_code"}}
+            </div>
+            <div class="cell small-3 medium-3">
+                {{>_radio type="radio" value="Bill To" group="rPCT" id="r-nimspn"}}
+            </div>
+            <div class="cell small-3 medium-3">
+                {{>_radio type="radio" value="Ship To" group="rPCT" id="r-nimspn"}}
+            </div>
+        </div>
+    </fieldset>
+</div>
+
+
+
+<div class="grid-x">
+    <fieldset class="cell small-12">
+        <div class="grid-x">
+            <legend class="cell large-12">
+                <p class="uppercase">At least one of the following is required:</p>
+                <hr style="border-color: #979797; height:5px;">
+            </legend>
+        </div>
+
+        <!-- <div class="grid-x" style="margin-top:5px;"> -->
+        <div class="grid-x" style="">
+            <fieldset class="cell small-12 medium-6 large-5">
+                <div class="cell small-6">
+                    <label for="">
+                        <span>Name / Acct No</span>
+                        <div class="notation-body above">
+                            <p class="normal">Add multiple customers below. Customer level determined by question above
+                            </p>
+                        </div>
+                        <input class="k-input" type="text" placeholder="Type to Search">
+                    </label>
+                </div>
+            </fieldset>
+        </div>
+
+
+        <!-- <div class="grid-x" style="margin-top:30px;"> -->
+        <div class="grid-x" style="">
+            <fieldset class="cell small-12 medium-6 large-5">
+                <div class="cell small-6">
+                    <label for="">
+                        <span>Sales Agreement Code</span>
+                        <input class="k-input" type="text" placeholder="Type or Select From List">
+                    </label>
+                </div>
+            </fieldset>
+        </div>
+
+        <div id="section-zones" class="cell small-6">
+            <label for="">
+                <span>Zone</span>
+                <ul class="zones" style="list-style:none;">
+                    <li class="zone-node">{{>_radio type="checkbox" value="Zone-1" group="zone" id="tree-zone-1"}}</li>
+                    <li class="zone-node">{{>_radio type="checkbox" value="Zone-2" group="zone" id="tree-zone-2"}}</li>
+                    <li class="zone-node">{{>_radio type="checkbox" value="Zone-3" group="zone" id="tree-zone-3"}}</li>
+                    <li class="zone-node">{{>_radio type="checkbox" value="Zone-4" group="zone" id="tree-zone-4"}}</li>
+                    <li class="zone-node">{{>_radio type="checkbox" value="Zone-5" group="zone" id="tree-zone-5"}}</li>
+                    <li class="zone-node">{{>_radio type="checkbox" value="Zone-6" group="zone" id="tree-zone-6"}}</li>
+
+
+                </ul>
+            </label>
+        </div>
+        <div class="grid-x">
+            <fieldset class="cell small-12 medium-6 large-5">
+                <div class="cell small-6">
+                    <label for="">
+                        <span>State / Province</span>
+                        <select class="k-select" name="state-or-province" id="state-or-prov"></select>
+                    </label>
+                </div>
+            </fieldset>
+        </div>
+
+
+
+
+
+    </fieldset>
+
+    <div class="cell small-6">
+        <div class="button-container">
+            <label for="">
+                <p class="normal">Click the button below to display the grid of participants based on the filters above.
+                </p>
+                <button id="load-participants-list" type="submit" class="square full disabled">
+                    <span class="uppercase bold">Load Participants List</span>
+                </button>
+            </label>
+        </div>
+    </div>
+</div>

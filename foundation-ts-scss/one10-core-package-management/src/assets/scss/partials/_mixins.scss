@@ -1,0 +1,18 @@
+
+// Remoes top space of a line of text
+@mixin setTextSizeAndBounds($size) {
+    &::before {
+      content: '';
+      display: block;
+      height: 0;
+      width: 0;
+      margin-top: calc((1 - #{$size}) * 0.5em);
+    }
+    @include setEqualLineHeightFontsize($size)
+  }
+
+  @mixin setEqualLineHeightFontsize($size)
+  {
+      font-size: $size;
+      line-height: $size;
+  }

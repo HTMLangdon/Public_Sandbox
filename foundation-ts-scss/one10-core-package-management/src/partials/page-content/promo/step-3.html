@@ -1,0 +1,174 @@
+<div class="grid-x align-left">
+    <div class="cell">
+        <h2>Define Products</h2>
+    </div>
+</div>
+
+<div class="grid-x">
+    <fieldset class="cell large-12">
+        <legend class="cell large-12">
+            <span>Do you want new/status change products to be automatically added?</span><span
+                class="notation-mark">*</span>
+            <!-- <p class="notation-body normal" style="font-size:12px;"> -->
+            <p class="notation-body normal">
+                If new products meet the filter criteria they will be automatically be enrolled throughout the deferred
+                rebate period
+            </p>
+        </legend>
+
+        <div class="grid-x">
+            <div class="cell small-6 medium-4 large-3">
+                <div class="grid-x  align-right">
+                    <div class="cell small-6">
+                        {{>_radio type="radio" value="Yes" group="rPAE" id="r-PAE-yes"}}
+                    </div>
+                    <div class="cell small-6">
+                        {{>_radio type="radio" value="No" group="rPAE" id="r-PAE-no"}}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </fieldset>
+</div>
+
+
+<div class="grid-x">
+    <fieldset class="cell large-12">
+        <legend class="cell large-12">
+            <span>Select List Type</span><span class="notation-mark">*</span>
+            <!-- <p class="notation-body normal" style="font-size:12px;"> -->
+            <p class="notation-body normal">
+                Choose what level of detail the product list will go in to
+            </p>
+        </legend>
+
+        <div class="grid-x">
+            <div class="cell small-6 medium-6">
+                <div class="grid-x  align-right">
+                    <div class="cell large-2">
+                        {{>_radio type="radio" value="Brand" group="listtype" id="r-PAE-yes"}}
+                    </div>
+                    <div class="cell large-4">
+                        {{>_radio type="radio" value="Product Category" group="listtype" id="r-PAE-yes"}}
+                    </div>
+                    <div class="cell large-2">
+                        {{>_radio type="radio" value="GLPC" group="listtype" id="r-PAE-yes"}}
+                    </div>
+                    <div class="cell large-4">
+                        {{>_radio type="radio" value="MSPN" group="listtype" id="r-PAE-yes"}}
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </fieldset>
+</div>
+
+
+
+<div class="grid-x">
+    <fieldset class="cell small-12 medium-6 large-6">
+        <div class="cell small-12">
+            <label for="">
+                <span>Marketing Status Code</span>
+                <span class="notation-mark">*</span>
+                ß <textarea name="placeholder-mselect-dropdown" id="" cols="30" rows="10">
+                        </textarea>
+            </label>
+        </div>
+    </fieldset>
+</div>
+
+
+
+
+<div class="grid-x">
+
+    <fieldset class="cell small-12">
+
+        <div class="grid-x">
+            <legend class="cell large-12">
+                <p class="uppercase">At least one of the following is required:</p>
+                <hr style="border-color: #979797; height:5px;">
+            </legend>
+        </div>
+        <div style="height:35px;"></div>
+
+        <div class="grid-x">
+
+            <div class="cell large-6">
+                <label for="">
+                    <span>Brand</span>
+                    <select name="NAME_HERE" id="">
+                        <option value="n-a">Type or Select From List </option>
+                    </select>
+                </label>
+
+                <label for="">
+                    <span>Product Category</span>
+                    <select name="NAME_HERE" id="">
+                        <option value="n-a">Type or Select From List</option>
+                    </select>
+                </label>
+
+
+                <label for="">
+                    <span>GLPC</span>
+                    <select name="NAME_HERE" id="">
+                        <option value="n-a">Type to Search</option>
+                    </select>
+                </label>
+                <label for="">
+                    <span>MSPN Number/Description</span>
+                    <select name="NAME_HERE" id="">
+                        <option value="n-a">Type to Search</option>
+                    </select>
+                </label>
+
+
+                <label for="">
+                    <span>Rim Diameter</span>
+                    <select name="NAME_HERE" id="">
+                        <option value="n-a">Type to Search</option>
+                    </select>
+                </label>
+
+
+                <label for="">
+                    <span>Tread Design</span>
+                    <select name="NAME_HERE" id="">
+                        <option value="n-a">Type to Search</option>
+                    </select>
+                </label>
+
+                <label for="">
+                    <span>Business Line </span>
+                    <select name="NAME_HERE" id="">
+                        <option value="n-a">Type or Select From List</option>
+                    </select>
+                </label>
+            </div>
+        </div>
+
+    </fieldset>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+<div class="cell small-6">
+    <div class="button-container">
+        <label for="">
+            <button id="load-participants-list" type="submit" class="square full disabled">
+                <span class="uppercase bold">Load Products List</span>
+            </button>
+        </label>
+    </div>
+</div>

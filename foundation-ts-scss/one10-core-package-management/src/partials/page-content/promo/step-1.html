@@ -1,0 +1,136 @@
+<div class="grid-x align-left">
+    <div class="cell">
+        <h2>Define Deferred Rebate</h2>
+    </div>
+</div>
+
+<div class="grid-x">
+    <fieldset class="cell small-6 medium-4 large-3">
+        <div class="grid-x  align-right">
+            <!-- <div class="cell large-12"> -->
+            <legend class="cell large-12">
+                <span>Deferred Rebate Type</span>
+                <span class="notation-mark">*</span>
+            </legend>
+            <!-- </div> -->
+            <div class="cell small-6">
+                {{>_radio type="radio" value="Program" group="rDRT" id="r-program"}}
+            </div>
+            <div class="cell small-6">
+                {{>_radio type="radio" value="Campaign" group="rDRT" id="r-campaign"}}
+            </div>
+        </div>
+    </fieldset>
+</div>
+<div class="grid-x">
+    <fieldset id="payment-code-type" class="cell small-6 medium-4 large-3">
+        <div class="grid-x align-right">
+            <div class="cell large-12">
+                <legend>
+                    <span>Payment Code Type</span>
+                    <span class="notation-mark">*</span>
+                </legend>
+            </div>
+
+            <!-- <div class="cell small-6" style="margin-bottom:15px;"> -->
+            <div class="cell small-6" style="">
+                {{>_radio type="radio" value="GL Code" group="rPCT" id="r-gl_code"}}
+            </div>
+            <!-- <div class="cell small-6" style="margin-bottom:15px;"> -->
+            <div class="cell small-6" style="">
+                {{>_radio type="radio" value="NIMSPN" group="rPCT" id="r-nimspn"}}
+            </div>
+        </div>
+        <div class="cell small-6"><input class="k-input" type="text"></div>
+    </fieldset>
+</div>
+
+<div class="grid-x">
+    <fieldset class="cell small-12 medium-6 large-5">
+        <div class="cell small-6">
+            <label for="">
+                <span>Deferred Rebate Name</span>
+                <span class="notation-mark">*</span>
+                <input class="k-input" type="text" placeholder=".small-6">
+            </label>
+            <p class="notation-body italic">Note this name will be customer-facing. 45 characters max suggested</p>
+        </div>
+    </fieldset>
+</div>
+
+<div class="grid-x">
+    <fieldset class="cell small-12 medium-6 large-5">
+        <div class="cell small-6">
+            <label>
+                <span>Deferred Rebate Description</span>
+                <span class="notation-mark">*</span>
+                <textarea placeholder="min-height:84px"></textarea>
+            </label>
+            <p class="notation-body italic">Note this description will be customer-facing. 400 characters max suggested
+            </p>
+        </div>
+    </fieldset>
+</div>
+
+<div class="grid-x">
+    <fieldset class="cell small-12 medium-6 large-5">
+        <div class="grid-x grid-margin-x align-right">
+            <div class="cell small-6">
+                <label for="start_a">
+                    <span>Order Start Date</span>
+                    <span class="notation-mark">*</span>
+                    <input class="k-input" type="date">
+                </label>
+            </div>
+            <div class="cell small-6">
+                <label for="end_a">
+                    <span>Order End Date</span>
+                    <span class="notation-mark">*</span>
+                    <input class="k-input" type="date"></label>
+            </div>
+        </div>
+    </fieldset>
+</div>
+
+<div class="grid-x">
+    <fieldset class="cell small-12 medium-6 large-5">
+        <div class="grid-x grid-margin-x align-right">
+            <div class="cell small-6">
+                <label for="start_a">
+                    <span>Invoice Start Date</span>
+                    <span class="notation-mark">*</span>
+                    <input class="k-input" type="date"></label>
+            </div>
+            <div class="cell small-6">
+                <label for="end_a">
+                    <span>Invoice End Date</span>
+                    <span class="notation-mark">*</span>
+                    <input class="k-input" type="date"></label>
+            </div>
+
+        </div>
+    </fieldset>
+</div>
+
+<div class="grid-x">
+    <fieldset class="cell small-12 medium-6 large-5">
+
+
+        <div class="grid-x grid-margin-x align-right">
+            <div class="cell small-12">
+                <label>
+                    <span>Last Day to Accept Transactions</span>
+                    <span class="notation-mark">*</span>
+                </label>
+            </div>
+        </div>
+        <div class="grid-x grid-margin-x">
+            <div class="cell small-6">
+                <label>
+                    <input class="k-input" type="date">
+                </label>
+            </div>
+        </div>
+
+    </fieldset>
+</div>

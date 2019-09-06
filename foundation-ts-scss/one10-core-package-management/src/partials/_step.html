@@ -1,0 +1,26 @@
+<li class="step float-left">
+
+    <!-- replace with _radio partial - set float-left to conditional? -->
+    <label class="radio">
+        {{#ifequal  @index 1}}
+        <input type="radio" name="current-step" value="{{@index}}" checked>
+        {{else}}
+        <input type="radio" name="current-step" value="{{@index}}">
+        {{/ifequal}}
+        <span>
+            <span>{{@index}}</span>
+        </span>
+    </label>
+
+    {{#ifequal  @index @totalSteps}}
+    <div class="step-line-separator float-left" style="display: none !important;">
+        <div class="hr"></div>
+    </div>
+    {{else}}
+    <div class="step-line-separator float-left">
+        <div class="hr"></div>
+    </div>
+
+    {{/ifequal}}
+
+</li>

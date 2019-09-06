@@ -1,0 +1,23 @@
+
+<div class="stepper">
+    <ul class="steps clearfix">
+        {{#pfor count}}
+            {{>_step}}
+        {{/pfor}}
+    </ul>
+</div>
+
+<!-- 
+    stepper     
+    
+    Dependencies:
+    - helpers/pfor.js (custom helper - for loop iteration)
+    - scss/partials/_stepper.scss
+        - $totalSteps: #
+
+    - partials/step.html
+
+    
+    -  #pfor # 
+            - this number (#) must be the same as '$totalSteps' within _stepper.scss partial
+ -->

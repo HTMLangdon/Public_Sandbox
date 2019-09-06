@@ -20,7 +20,6 @@ UNCSS_OPTIONS:
 PATHS:
   #Path to source files [src] folder
   src: "src/"
-
   # Path to dist folder
   dist: "dist/"
   #specific paths for each resource - relative to PATHS.dist

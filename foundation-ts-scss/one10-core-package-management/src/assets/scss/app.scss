@@ -1,10 +1,13 @@
 @charset 'utf-8';
 
 @import 'settings';
+
+
 @import 'foundation';
 @import 'motion-ui';
-@import 'multiselect';
 
+@import 'vendor/kendo.scss';
+@import 'vendor/kendo-overrides.scss';
 
 // Global styles
 @include foundation-global-styles;
@@ -16,7 +19,8 @@
 // @include foundation-grid;
 // @include foundation-flex-grid;
 
-// Generic components
+// Generic 
+@import 'partials/mixins';
 @include foundation-button;
 @include foundation-button-group;
 @include foundation-close-button;
@@ -64,3 +68,11 @@
 // Motion UI
 @include motion-ui-transitions;
 @include motion-ui-animations;
+
+
+.grid-container, .row{max-width:100%}
+
+@import 'partials/radios';
+@import 'partials/stepper';
+
+@import 'custom'
