@@ -1,13 +1,13 @@
 @charset 'utf-8';
 
-@import 'settings';
 
+@import 'settings';
 
 @import 'foundation';
 @import 'motion-ui';
 
-@import 'vendor/kendo.scss';
-@import 'vendor/kendo-overrides.scss';
+// @import 'vendor/kendo.scss';
+// @import 'vendor/kendo-overrides.scss';
 
 // Global styles
 @include foundation-global-styles;
@@ -20,7 +20,6 @@
 // @include foundation-flex-grid;
 
 // Generic 
-@import 'partials/mixins';
 @include foundation-button;
 @include foundation-button-group;
 @include foundation-close-button;
@@ -72,7 +71,25 @@
 
 .grid-container, .row{max-width:100%}
 
-@import 'partials/radios';
-@import 'partials/stepper';
+// @import 'reset-all'
+@import 'partials/fonts';
 
-@import 'custom'
+
+@import 'partials/mixins';
+
+
+
+
+@import 'partials/components/radios';
+@import 'partials/components/stepper';
+
+@import 'partials/header';
+@import 'partials/footer';
+
+
+
+
+
+@import 'custom';
+
+@import 'partials/media-queries';

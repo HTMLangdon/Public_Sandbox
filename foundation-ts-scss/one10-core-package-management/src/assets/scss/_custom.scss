@@ -1,7 +1,8 @@
-$secondarycolor:rgba(153, 153, 153, 1);
-$maincolor: rgba(39, 80, 155, 1);
 
-$sticky-footer-height:80px;
+
+
+
+
 
 
 
@@ -18,235 +19,17 @@ h2 {
     // margin: 0 0 0 0;
     // padding: 20px 0 0 0;
 }
-.k-widget,
-.k-widget,
-.k-menu,
-.k-panelbar,
-.k-tabstrip,
-.k-header,
-.k-link,
-.k-button,
-.k-input,
-.k-textbox,
-.k-input,
-.k-checkbox,
-.k-group,
-.k-content,
-.k-popup,
-.k-icon,
-.k-sprite,
-.k-image,
-.k-item,
-.k-first,
-.k-last,
-.k-item,
-.k-state-default,
-.k-state-hover,
-.k-state-focused,
-.k-state-active,
-.k-link,
-.k-state-selected,
-.k-state-disabled,
-.k-state-error {
-    list-style: none;
-    text-decoration: none;
-    // font-size: 100%;
-    font-family: OpenSans;
-    
-    margin: 0 0 0 0;
-    padding: 0 0 0 0;
-    border-top-left-radius: 0px;
-    border-top-right-radius: 0px;
-    border-bottom-left-radius: 0px;
-    border-bottom-right-radius: 0px;
-    border: 1px solid $michelin-secondary-rgba;
-    box-shadow: none;
-    transition: .25s ease-in-out;
-    height: 40px;
 
-}
-
-[type='text'],
-[type='textarea'],
-[type='password'],
-[type='date'],
-[type='datetime'],
-[type='datetime-local'],
-[type='month'],
-[type='week'],
-[type='email'],
-[type='number'],
-[type='search'],
-[type='tel'],
-[type='time'],
-[type='url'],
-[type='color'],
-textarea {
-    &.k-input{
-        border: 1px solid $secondarycolor;
-        box-shadow: none;
-        transition: .25s ease-in-out;
-        height: 40px;
-        margin: 0 0 0 0;
-        padding:0 0 0 0;
-        
-    }
-
-
-    &:hover {
-        // border:1px solid light.en($secondarycolor, 30%);
-        // box-shadow: inset 0 1px 2px $secondarycolor;
-    }
-
-    &:focus {
-        box-shadow: inset 0 1px 2px darken($secondarycolor, 5%);
-        border: 1px solid $secondarycolor;
-    }
-}
-
-// override input && textarea height (was 40)
-textarea {
-    min-height: 84px;
-}
-
-
-
-
-// make sure all padding and margin values is set to ZERO
-a,
-article,
-aside,
-body,
-br,
-details,
-div,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-head,
-header,
-hgroup,
-hr,
-html,
-footer,
-nav,
-p,
-section,
-span,
-base,
-basefont,
-link,
-meta,
-style,
-title,
-button,
-fieldset,
-form,
-input,
-keygen,
-label,
-legend,
-meter,
-optgroup,
-option,
-select,
-textarea,
-abbr,
-acronym,
-address,
-b,
-bdi,
-bdo,
-big,
-blockquote,
-center,
-cite,
-code,
-del,
-dfn,
-em,
-font,
-i,
-ins,
-kbd,
-mark,
-output,
-pre,
-progress,
-q,
-rp,
-rt,
-ruby,
-s,
-samp,
-small,
-strike,
-strong,
-sub,
-sup,
-tt,
-u,
-var,
-wbr,
-dd,
-dir,
-dl,
-dt,
-li,
-ol,
-menu,
-ul,
-caption,
-col,
-colgroup,
-table,
-tbody,
-td,
-tfoot,
-thead,
-th,
-tr,
-noscript,
-script,
-area,
-audio,
-canvas,
-embed,
-figcaption,
-figure,
-frame,
-frameset,
-iframe,
-img,
-map,
-noframes,
-object,
-param,
-time,
-video {
-    margin: 0 0 0 0;
-    padding: 0 0 0 0;
-    margin-top: 0px;
-    margin-right: 0px;
-    margin-bottom: 0px;
-    margin-left: 0px;
-    padding-top: 0px;
-    padding-right: 0px;
-    padding-bottom: 0px;
-    padding-left: 0px;
-    line-height: 1.0;
-}
 
 span {
     display: inline-block;
 }
 
+
+
+// TEXT that is preceeded or a notation of text with an asterisk 
 .notation-body {
-    margin: 7px 0 0 0;
-    ;
+    // margin: 7px 0 0 0;
     font-size: 12px;
 
     &.italic {
@@ -254,47 +37,6 @@ span {
     }
 }
 
-/* open-sans-regular */
-@font-face {
-    font-family: OpenSans;
-    font-style: normal;
-    font-weight: 400;
-    src: url('../fonts/open-sans-v17-latin-regular.eot');
-    src: local('Open Sans Regular'), local('OpenSans-Regular'),
-        url('../fonts/open-sans-v17-latin-regular.eot?#iefix') format('embedded-opentype'),
-        url('../fonts/open-sans-v17-latin-regular.woff2') format('woff2'),
-        url('../fonts/open-sans-v17-latin-regular.woff') format('woff'),
-        url('../fonts/open-sans-v17-latin-regular.ttf') format('truetype'),
-        url('../fonts/open-sans-v17-latin-regular.svg#OpenSans') format('svg');
-}
-
-/* open-sans-italic */
-@font-face {
-    font-family: OpenSans_italic;
-    font-style: italic;
-    font-weight: 400;
-    src: url('../fonts/open-sans-v17-latin-italic.eot');
-    src: local('Open Sans Italic'), local('OpenSans-Italic'),
-        url('../fonts/open-sans-v17-latin-italic.eot?#iefix') format('embedded-opentype'),
-        url('../fonts/open-sans-v17-latin-italic.woff2') format('woff2'),
-        url('../fonts/open-sans-v17-latin-italic.woff') format('woff'),
-        url('../fonts/open-sans-v17-latin-italic.ttf') format('truetype'),
-        url('../fonts/open-sans-v17-latin-italic.svg#OpenSans') format('svg');
-}
-
-/* open-sans-700 */
-@font-face {
-    font-family: OpenSans_700;
-    font-weight: 700;
-    // font-style: normal;
-    src: url('../fonts/open-sans-v17-latin-700.eot');
-    src: local('Open Sans Bold'), local('OpenSans-Bold'),
-        url('../fonts/open-sans-v17-latin-700.eot?#iefix') format('embedded-opentype'),
-        url('../fonts/open-sans-v17-latin-700.woff2') format('woff2'),
-        url('../fonts/open-sans-v17-latin-700.woff') format('woff'),
-        url('../fonts/open-sans-v17-latin-700.ttf') format('truetype'),
-        url('../fonts/open-sans-v17-latin-700.svg#OpenSans') format('svg');
-}
 
 * {
     font-family: OpenSans;
@@ -378,9 +120,6 @@ legend {
             font-family: OpenSans_700;
             // outline:1px solid lightgreen;
             // margin: 33px 0 7px 0;
-
-
-
         }
     }
 
@@ -392,7 +131,18 @@ legend {
 
 
 
+
 main {
+
+    margin-bottom: $sticky-footer-height;
+    margin-left: 40px;
+
+    fieldset {
+        // padding-bottom: 20px;
+    }
+
+
+
     >.grid-x {
         &:first-of-type {
             >.cell:first-of-type {
@@ -407,9 +157,9 @@ main {
     >.grid-x {
 
         /*
-        very first element in <main> with class .grid-x
-        should be the stepper container
-    */
+very first element in <main> with class .grid-x
+should be the stepper container
+*/
         &:first-of-type {
             // margin: 25px 0px 25px 0;
 
@@ -420,13 +170,13 @@ main {
             }
 
             /*
-            target container of <h1>    
-        */
+target container of <h1>    
+*/
             >h1:first-child {}
 
             /*
-            target container of <div class="stepper">    
-        */
+target container of <div class="stepper">    
+*/
             >*:last-child {}
 
         }
@@ -437,9 +187,9 @@ main {
         >.grid-x {
 
             /*
-                very first element in <main> with class .grid-x
-                should be the stepper container
-            */
+    very first element in <main> with class .grid-x
+    should be the stepper container
+*/
             &:first-of-type {
                 // margin: 0px 0px 25px 0;
 
@@ -469,96 +219,8 @@ main {
 }
 
 
-header {
-    .header-logo {
-        padding: 30px 40px 20px 40px;
-    }
 
-    nav {
-        margin: 0px 0px 20px 0px;
 
-        &.michelin {
-            -webkit-box-shadow: 0px 3px 8px -4px rgba(0, 0, 0, 0.32);
-            -moz-box-shadow: 0px 3px 8px -4px rgba(0, 0, 0, 0.32);
-            box-shadow: 0px 3px 8px -4px rgba(0, 0, 0, 0.32);
-            height: 40px;
-
-            ul {
-
-                padding: 0px 40px 0px 40px;
-                display: -webkit-flex;
-                flex-wrap: nowrap;
-                flex-direction: row;
-                justify-content: flex-start;
-                align-items: baseline;
-                align-content: flex-start;
-                border-top: 1px solid #e7e7e7;
-
-                li {
-                    text-decoration: none;
-                    list-style: none;
-                    text-transform: uppercase;
-                    color: #53565a;
-                    margin: 5px;
-                    padding-top: 4px;
-                    padding-right: 30px;
-
-                    a {
-                        font-family: OpenSans_700;
-                        padding: 0px 0px 5px 0px;
-                        text-decoration: none;
-                        text-transform: uppercase;
-                        color: #53565a;
-                        font-weight: 700;
-                        border-bottom: 4px solid rgba(39, 80, 155, 0);
-                        -webkit-transition: .5s;
-                        transition: .25s;
-                        transition-timing-function: ease-in-out;
-
-                        &:hover {
-                            color: $michelin-primary-hex;
-                            border-color: rgba(39, 80, 155, 1)
-                        }
-
-                        &:active {
-                            color: lighten($michelin-primary-hex, 30%);
-                        }
-                    }
-                }
-            }
-        }
-    }
-}
-
-main {
-
-    margin-bottom: $sticky-footer-height;
-    margin-left: 40px;
-
-    fieldset {
-        // padding-bottom: 20px;
-    }
-}
-
-footer {
-    padding: 10px 40px 10px 40px;
-    border-top: 1px solid rgba(189, 189, 189, 0.5);
-    width: 100%;
-    height: 60px;
-
-    &.sticky-bottom {
-        position: fixed;
-        bottom: 0px;
-        left: 0px;
-        background-color: rgba(255, 255, 255, 1);
-
-        .button-container {
-            &:first-of-type {
-                margin-right: 10px;
-            }
-        }
-    }
-}
 
 .button-container {
     label {
@@ -567,7 +229,6 @@ footer {
         span:first-child {
             font-family: OpenSans;
         }
-
     }
 }
 
@@ -666,11 +327,6 @@ button {
     }
 }
 
-.button-container {
-    // margin: 14px 20px 14px 10px;
-
-    button {}
-}
 
 
 
@@ -685,6 +341,7 @@ button {
 .grid-x {
 
     margin-bottom: 15px;
+
     .grid-x {
         margin-bottom: 0px;
     }
@@ -704,24 +361,18 @@ button {
     }
 }
 
-/* Small only */
-@media screen and (max-width: 39.9375em) {
-    main {
-        margin-right: 40px;
-    }
-}
 
-/* Medium and up */
-@media screen and (min-width: 40em) {}
 
-/* Medium only */
-@media screen and (min-width: 40em) and (max-width: 63.9375em) {}
 
-/* Large and up */
-@media screen and (min-width: 64em) {}
 
-/* Large only */
-@media screen and (min-width: 64em) and (max-width: 74.9375em) {}
+
+
+
+
+
+
+
+
 
 
 #section-zones {
@@ -795,21 +446,21 @@ ul {
 .k-state-selected,
 .k-state-disabled,
 .k-state-error {
-    list-style: none;
-    text-decoration: none;
-    // font-size: 100%;
-    font-family: OpenSans;
-    
-    margin: 0 0 0 0;
-    padding: 0 0 0 0;
-    border-top-left-radius: 0px;
-    border-top-right-radius: 0px;
-    border-bottom-left-radius: 0px;
-    border-bottom-right-radius: 0px;
-    border: 1px solid $michelin-secondary-rgba;
-    box-shadow: none;
-    transition: .25s ease-in-out;
-    height: 40px;
+list-style: none;
+text-decoration: none;
+// font-size: 100%;
+font-family: OpenSans;
+
+margin: 0 0 0 0;
+padding: 0 0 0 0;
+border-top-left-radius: 0px;
+border-top-right-radius: 0px;
+border-bottom-left-radius: 0px;
+border-bottom-right-radius: 0px;
+border: 1px solid $michelin-secondary-rgba;
+box-shadow: none;
+transition: .25s ease-in-out;
+height: 40px;
 
 }
 
