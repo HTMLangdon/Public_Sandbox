@@ -1,0 +1,28 @@
+.page-error {
+  margin: 126px auto 0;
+  width: 375px;
+  padding: 24px;
+  text-align: center;
+  h2 {
+    color: rgba(0,0,0,0.87);
+    font-family: Roboto;
+    font-size: 24px;
+    line-height: 28px;
+    margin-bottom: 0px;
+    font-weight: normal;
+    min-height: 64px;
+  }
+  div:nth-child(2) {
+    color: rgba(0,0,0,0.6);
+    font-family: Roboto;
+    font-size: 16px;
+    letter-spacing: 0.15px;
+    line-height: 24px;
+    margin-bottom:56px;
+  }
+  @include breakpoint(small only) {
+    margin: 104px auto 0;
+    padding-left: 19px;
+    padding-right: 19px;
+  }
+}

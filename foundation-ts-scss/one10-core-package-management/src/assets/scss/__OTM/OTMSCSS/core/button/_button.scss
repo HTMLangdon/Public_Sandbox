@@ -1,0 +1,22 @@
+.button {
+  background-color: $button-bg-color;
+
+  &:hover {
+    background-color: $button-bg-color-hover;
+  }
+
+  &:focus {
+    background-color: $button-bg-color-hover;
+  }
+
+  &--secondary {
+    background-color: transparent;
+    border-color: $button-bg-color;
+    color: $button-bg-color;
+
+    &:hover {
+      background-color: $button-bg-color-hover;
+      color: #fff;
+    }
+  }
+}

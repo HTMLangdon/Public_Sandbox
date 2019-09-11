@@ -1,0 +1,16 @@
+//////// FOOTER ////////
+.footer {
+	padding: $main-footer-padding;
+	background: $main-footer-bgcolor;
+	&__divider{
+		@extend .small-12, .cell;
+		border-top:solid 1px $main-footer-border-color;
+		padding-top:17px;
+	}
+	&__helpdesk {
+		@extend .medium-4, .cell;
+	}
+	&__details {
+		@extend .medium-8, .cell;
+	}
+}

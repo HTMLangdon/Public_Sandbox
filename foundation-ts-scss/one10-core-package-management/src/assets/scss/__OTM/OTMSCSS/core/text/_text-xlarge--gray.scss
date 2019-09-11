@@ -1,0 +1,12 @@
+.text-xlarge--gray {
+	font-size: $text-xlarge-size;
+	color: $text-xlarge--gray;
+	opacity: .33;
+	font-weight: 300;
+	line-height: 40px;
+	letter-spacing: -1px;
+	&--bold {
+		@extend .text-xlarge--gray;
+		font-weight: bold;
+	}
+}

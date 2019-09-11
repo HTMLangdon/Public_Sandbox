@@ -1,0 +1,10 @@
+////////////////////////////////////////////
+//////// EMPLOYEE RECOGNITION GIZMO ////////
+////////////////////////////////////////////
+.gizmo--employee-recognition {
+	@extend .gizmo;
+	 min-height: 770px;
+	.gizmo__contenttitle {
+		margin-bottom: 20px;	
+	}
+}

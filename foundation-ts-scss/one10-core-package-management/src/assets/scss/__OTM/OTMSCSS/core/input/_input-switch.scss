@@ -1,0 +1,45 @@
+.input-switch {
+	.switch-paddle{
+		height: 14px;
+		border-radius: 15px;
+		width: 34px;
+		background: $input-switch-disabled-bg-color;
+		&::after {
+		    position: absolute;
+		    box-shadow: rgba(0, 0, 0, 0.5) 0px 1px 2px 0px;
+		    left: 0rem;
+		    display: block;
+		    width: 20px;
+		    height: 20px;
+		    -webkit-transform: translate3d(0, 0, 0);
+		    transform: translate3d(0, 0, 0);
+		    border-radius: 0;
+		    background: $input-switch-disabled-color;
+		    transition: all 0.25s ease-out;
+		    content: '';
+		    border-radius: 20px;
+		    top: -3px;
+    	}
+	}
+	.switch-input:checked ~ .switch-paddle::after {
+		left: 1rem;
+		background: $input-switch-enabled-color;
+	}
+	.switch-input:checked ~ .switch-paddle {
+		background: $input-switch-enabled-bg-color;
+	}
+	&--right {
+		margin-top:10px;
+		margin-bottom:15px;
+		float:left;
+		width:100%;
+		p {
+			float: left;
+			color: #163D5C;
+		}
+		.input-switch {
+			float: right;
+			margin-right: 6px;
+		}
+	}
+}

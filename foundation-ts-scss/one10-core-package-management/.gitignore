@@ -6,3 +6,5 @@ dist
 *.swp
 .cache
 .idea
+src/assets/scss/OTMSCSS
+src/assets/ts/OTMTS

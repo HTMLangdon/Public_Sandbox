@@ -1,0 +1,142 @@
+/////////////////////////
+///// recognition ITEM /////
+/////////////////////////
+.recognition-row {
+  @extend .grid-x;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding-bottom: 6px;
+  border-bottom: solid 1px rgba(24, 62, 90, 0.25);
+  float: left;
+  width: 100%;
+
+  &:last-child {
+    border-bottom: none;
+    margin-bottom: 5px;
+  }
+
+  .see-more {
+    font-weight: 600;
+  }
+
+  &__profile-img {
+    @extend .small-3, .text-center;
+    padding-top: 10px;
+    padding-right: 10px;
+
+    img {
+      padding-bottom: 2px;
+    }
+
+    i {
+      font-size: 54px;
+      opacity: 0.8;
+      color: #183e5a;
+    }
+
+    span {
+      color: $name-h5;
+      font-size: 12px;
+      line-height: 1.2;
+      display: block;
+      font-weight: bold;
+    }
+  }
+
+  &__name {
+    @extend .small-9;
+
+    h5 {
+      font-size: $main-text-size;
+      color: $name-h5;
+      margin-bottom: 2px;
+
+      > span {
+        color: $name-dot;
+        padding: 0px 2px;
+      }
+
+      .title {
+        color: $name-title;
+      }
+    }
+
+    p {
+      line-height: 17px;
+      margin-bottom: 3px;
+      min-height: 34px;
+    }
+  }
+
+  &__fromname {
+    text-align: right;
+    font-size: $main-text-size;
+    color: $name-h5;
+    font-weight: bold;
+    display: block;
+    margin-right: 10px;
+    margin-top: 3px;
+  }
+
+  &__actions {
+    @extend .small-12, .grid-x;
+    padding-top: 5px;
+    font-size: 12px;
+
+    i {
+      font-size: 10px;
+    }
+
+    &--like {
+      @extend .small-3, .cell;
+    }
+
+    &--comment {
+      @extend .small-5, .cell, .text-center;
+    }
+
+    &--date {
+      @extend .small-4, .cell, .text-right;
+    }
+  }
+
+  &--likecomment {
+    @extend .grid-x;
+    padding-top: 14px;
+    padding-bottom: 10px;
+    border-bottom: solid 1px #999;
+
+    &__img {
+      @extend .small-2, .cell;
+    }
+
+    &__comment {
+      @extend .small-10, .cell, .text-right;
+      padding-top: 5px;
+
+      span {
+        color: $name-h5;
+        line-height: 1.2;
+        font-weight: bold;
+        margin-right: 10px;
+        float: left;
+      }
+
+      p {
+        text-align: left;
+      }
+    }
+
+    &:last-of-type {
+      border-bottom: none;
+    }
+  }
+
+  &__reveal {
+    @extend .reveal;
+
+    @include breakpoint(670px down) {
+      background: #fff;
+    }
+  }
+}

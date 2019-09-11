@@ -1,0 +1,12 @@
+// BUBBLE BUTTON
+.btn--bubble {
+	@extend .btn;
+	margin-right: 8px;
+    color: $button-bubble;
+    border-radius: 2px;
+    &:hover {
+		background: $button-bubble-hover-background;
+	    color: $button-bubble-hover-text;
+	    text-decoration: none;
+	}
+}

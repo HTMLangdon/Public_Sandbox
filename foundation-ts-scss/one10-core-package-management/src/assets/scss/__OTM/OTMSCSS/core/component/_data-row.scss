@@ -1,0 +1,85 @@
+.data-row {
+	@extend .grid-x, .grid-margin-x;
+	&__cell {
+		@extend .small-3, .cell;
+		@include breakpoint(large) {
+			width: calc(25% - 1.875rem) !important;
+		}
+		@include breakpoint(medium) {
+			width: calc(50% - 1.875rem) !important;
+		}
+		@include breakpoint(small) {
+			width: calc(50% - 1.875rem) !important;
+		}
+		sup {
+			font-size:50%;
+		}
+		sub {
+			bottom:0;
+			font-size:50%;
+		}
+	}
+	&__cell--right {
+		@extend .data-row__cell, .text-right;
+		margin-right: 0px !important;
+		margin-left: 0px !important;
+		@include breakpoint(large) {
+			width: calc(25% - 1.875rem) !important;
+		}
+		@include breakpoint(medium) {
+			width: calc(50% - 1rem) !important;
+		}
+		@include breakpoint(small) {
+			width: calc(50% - 0rem) !important;
+		}
+		//padding-right:20px;
+	}
+	&__cell--right--last {
+		display: none;
+	}
+	&__earnings-links {
+		margin-left: 8px;
+		padding: 16px 0px;
+	}
+}
+
+.off-canvas {
+	.data-row__cell {
+		@extend .small-3, .cell;
+		width: calc(25% - 1.875rem) !important;
+		@include breakpoint(600 down) {
+			width: calc(50% - 1.875rem) !important;
+		}
+		&--right {
+			@extend .data-row__cell, .text-right;
+			width: calc(25% - 1.875rem) !important;
+			//padding-right:20px;
+			@include breakpoint(600 down) {
+				width: calc(50% - 0.475rem) !important;
+			}
+		}
+		&--right--last {
+			@extend .data-row__cell, .text-right;
+			@include breakpoint(medium){
+				width: calc(50% - 1.875rem) !important;
+				display: block;
+			}
+			@include breakpoint(600 down) {
+				width: calc(100% - 1.875rem) !important;
+			}
+		}
+		sup {
+			font-size:50%;
+		}
+		sub {
+			bottom:0;
+			font-size:50%;
+		}
+	}
+}
+
+.gizmo--expanded {
+	.data-row__earnings-links {
+		display: none;
+	}
+}

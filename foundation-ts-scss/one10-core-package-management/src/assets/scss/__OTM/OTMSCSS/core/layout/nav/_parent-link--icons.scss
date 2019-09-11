@@ -1,0 +1,24 @@
+.parent-link--icons {
+	@extend .parent-link;
+	margin-right: 18px;
+	padding: 9px 5px 0px 5px !important;
+	max-height: 40px;
+	&__icon {
+		font-family: 'Material Icons';
+		font-weight: normal;
+		font-style: normal;
+		font-size: $parent-link--icons__icon-size;
+		width:24px;
+		height:25px;
+		line-height: 25px;
+		letter-spacing: normal;
+		text-transform: none;
+		display: inline-block;
+		white-space: nowrap;
+		word-wrap: normal;
+		direction: ltr;
+		-webkit-font-feature-settings: 'liga';
+		-webkit-font-smoothing: antialiased;
+		font-feature-settings: 'liga';
+	}
+}

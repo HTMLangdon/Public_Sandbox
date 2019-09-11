@@ -24,6 +24,7 @@ PATHS:
   dist: "dist/"
   #specific paths for each resource - relative to PATHS.dist
   js: "js"
+  vendorJS: "js/vendor"
   css: "css"
   fonts: "assets/fonts"
   images: "assets/images"
@@ -40,3 +41,5 @@ PATHS:
   entries:
     # - "src/assets/js/app.js"
     - "src/assets/ts/index.js"
+  vendorEntries:
+    - "src/assets/js/kendo/"

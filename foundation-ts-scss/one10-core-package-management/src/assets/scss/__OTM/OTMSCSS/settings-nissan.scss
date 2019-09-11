@@ -1,0 +1,169 @@
+$brand-id: nissan;
+
+/////// FONT OPTIONS
+//$main-font: 'Roboto', sans-serif;
+$main-font: 'Lato', sans-serif;
+$main-text-size: 14px;
+$menu-link-size: 20px;
+$gizmo__title-size: 26px;
+$gizmo-announcement-title-size: 14px;
+$gizmo-p-lineheight: 16.8px;
+
+// H1-H6 SIZES
+$h1-size: 30px;
+$h2-size: 26px;
+$h3-size: 20px;
+$h4-size: 14px;
+$h5-size: 12px;
+$h6-size: 10px;
+
+/////// BACKGROUND AND TEXT COLORS
+$main-content-border-color: #545454;
+$main-link-color: #c3002f;
+$header-background-color: #c3002f;
+$menu-background-color: #FFF;
+$menu-mobile-background-color: #c3002f;
+$menu-alt-background-color: #c3002f;
+$menu-link-color: #000;
+$menu-dropdown-background: #343434;
+$main-content-bgcolor: #eee;
+$main-footer-bgcolor: #eee;
+$main-footer-border-color: #c3002f; //#000;
+$gizmo__title-color: #000;
+$gizmo-alt-title-bgcolor: #c3002f; //#000;
+$progress-bar-bgcolor: #DCDEE0;
+$progress-meter-bgcolor: #c3002f; //#000;
+$gizmo-alt-title-textcolor: #FFFFFF;
+$gizmo-secondary-bgcolor: #F4F4F4;
+$gizmo-secondary-altbgcolor: #FFFFFF;
+$gizmo-announcements-titlecolor: #c3002f;
+$mail-row-subject-color: #163D5C;
+$footer-title-color: #c3002f; //#000;
+$footer-link-color: #25c5d1;
+$text-muted: #CAC8C8;
+$message-delete-bg: #8B8D8D;
+$message-delete-text: #FFFFFF;
+$form-error-color: #B00020;
+$btn-hover: #920023;
+
+// TEXT
+$text-large--color: #c3002f; //#000;
+$text-medium--gray: #000000;
+$text-xlarge--gray: #000000;
+$text-xlarge-size: 45px;
+$text-large-size: 35px;
+$text-medium-size: 26px;
+$text-small-size: .8em;
+
+// NAVIGATION
+$navigation__pane-size: 1rem;
+$navigation__pane__bottomlink-size: 20px;
+$parent-link--icons__icon-size: 24px;
+$user-menu__top-size: 18px;
+$user-menu__top__textline-size: 14px;
+
+// GIZMO COLORS AND SIZES
+$use-percent: true;
+$gizmo-width-three-col: 368px;
+$gizmo-width-two-col: 768px;
+$gizmo-perc-width-three-col: 30.21%;
+$gizmo-perc-width-two-col: 63.095%;
+$gizmo-perc-width-full: 98%;
+$gizmo-width-full: 98%;
+$gizmo-backgbround: #FFF;
+$gizmo__header-title: #000;
+$gizmo__title-hover: #FFF;
+$tag-bg-color: #F26922;
+$tag-text-color: #FFFFFF;
+$navy-header: #c3002f; //#000;
+$light-grey: rgba(232, 232, 232, 1);
+$darker-light-grey: rgba(0, 0, 0, 0.38);
+$lead-title: #636160;
+$gizmo-expanded-width-two-cols: 768px;
+$gizmo__details-border-top: #CAC8C8;
+$gizmo__actionbar-border-color: #c3002f;
+$gizmo__updateinfo: #000;
+$gizmo__updateinfo-size: 12px;
+$gizmo__table-title: #CAC8C8;
+$gizmo__content-right-background: #F0F0F0;
+$gizmo__tag--coming-soon: #FFFFFF;
+//EXPANDED GIZMOS
+$gizmo--expanded__title: #FFF;
+$gizmo--expanded__header-title: #FFF;
+$gizmo__expand-btn-icon-size: 30px;
+
+// TABLES
+$table--gizmo-row: #FFFFFF;
+$table--gizmo-row-alternating: #f1f1f1;
+$table--gizmo-row-border-bottom: #e0dede;
+$table--gizmo-th: #000;
+
+
+// BUTTONS
+$light-rust: #d3b6a2;
+$button-bubble: #163D5C;
+$button-bubble-hover-background: #163D5C;
+$button-bubble-hover-text: #FFF;
+$button-icon-swap:#95989A;
+$button-icon-swap-hover: #000;
+$button--icon-large__text-size: 10px;
+$button--icon-reveal__hidden-size: 12px;
+$button--icon-swap-menu-size: 18px;
+$button--icon-swap-size: 16px;
+$button--icon-swap__hidden-size: 10px;
+$button--icon-swap__icon-size: 18px;
+$button-bg-color: #c3002f;
+$button-bg-color-hover: #c3002f; //#000;
+$button--expand-arrow: #c3002f; //#000;
+
+// INPUT
+$input-switch-disabled-bg-color: rgba(#221F1F, .26);
+$input-switch-disabled-color: #F1F1F1;
+$input-switch-enabled-bg-color: #9bc9c3;
+$input-switch-enabled-color: #0f796b;
+
+///////  STRUCTURE SIZES  //////
+$main-width: 1280px;
+$header-height: 140px;
+$main-container-padding: 24px 44px 28px 44px;
+$main-content-mobile-padding: 4px;
+$main-content-tablet-padding: 16px;
+$main-content-desktop-padding: 24px 44px 28px 44px;
+$main-footer-padding: 0 44px 41px 44px;
+
+///////  EMPLOYEE ROW  //////
+$name-h5: #2e5f6f;
+$name-dot: #707070;
+$name-title: #b7b7b7;
+
+///////  MAIL ROW  //////
+$mail-row__top-size: 12px;
+$mail-row__title-size: 14px;
+
+
+///////  STATS TEXT  //////
+$stats-text__stat-size: 35px;
+
+///////  LEADERBOARD ROW  //////
+$leaderboard-row-border-bottom: #dadada;
+$leaderboard-row-font: #c3002f;
+$leaderboard-row-bgcolor-first: #F4F4F4;
+$leaderboard-row-border-bottom-first: #9a9a9a;
+$leaderboard-row__points-color: #636160;
+$leaderboard-row__points-size: 17px;
+
+///////  TABS SPLIT ROW  //////
+$tabs-split-tabs-border-bottom: #e6e6e6;
+$tabs-split-link: #c3002f;
+$tabs-split-link-hover: #c3002f;
+$tabs-split-active-border: #c3002f;
+$tabs-split-active-link: #c3002f;
+$tabs-split__tabs-link-size: 14px;
+
+///////  MATERIAL ICONS  //////
+$material-icons-size: 24px;
+
+///////  LINK LIST  //////
+$link-list__title-size: 14px;
+$link-list__title-color: #FFF;
+$link-list__link-color: #FFF;

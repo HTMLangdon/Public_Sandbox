@@ -1,0 +1,9 @@
+/// CSS ANIMATIONS WILL BE REMOVED ONCE GREENSOCK IS IMPLEMENTED ///
+@keyframes slideInFromLeft {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}

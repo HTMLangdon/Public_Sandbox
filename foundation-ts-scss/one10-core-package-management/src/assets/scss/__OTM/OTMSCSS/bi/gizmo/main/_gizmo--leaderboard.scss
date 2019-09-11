@@ -1,0 +1,11 @@
+/////////////////////////////////////
+///////// LEADERBOARD GIZMO /////////
+/////////////////////////////////////
+.gizmo--leaderboard {
+	@extend .gizmo;
+	.gizmo__content {
+		@extend .gizmo__content;
+		width: 100%;
+		padding: 0px;
+	}
+}

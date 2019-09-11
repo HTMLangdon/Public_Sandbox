@@ -1,0 +1,9 @@
+///////////////////////////
+/////// GENERAL GIZMO ///////
+///////////////////////////
+.gizmo--general {
+  @extend .gizmo;
+  p {
+    display: block;
+  }
+}

@@ -1,0 +1,46 @@
+.default-rules-table {
+    box-sizing: border-box;
+    border-collapse: collapse;
+    width: 110%;
+    position: relative;
+    margin: 0 -5%;
+    font-size: 80%;
+
+    table {
+      width:100%;
+    }
+  
+  h4 {
+    text-align: center;
+  }
+
+   tr,  td,  th {
+    border: 1px solid gray;
+    position: relative;
+    padding: 2px;
+  }
+
+  thead tr {
+    height: 250px;
+  }
+
+  .rotate-me {
+    transform-origin: 0 50%;
+    transform: rotate(-90deg);
+    white-space: nowrap;
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+  }
+
+  .head-horizontal {
+    width: 450px;
+    text-align: right;
+  }
+
+  .material-icons {
+    font-weight: 600;
+    font-size: 14px;
+  }
+}

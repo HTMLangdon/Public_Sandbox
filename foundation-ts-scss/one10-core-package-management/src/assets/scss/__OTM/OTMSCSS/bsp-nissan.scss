@@ -1,0 +1,264 @@
+@charset 'utf-8';
+//@import 'utils/platform-settings';
+//@import 'utils/settings';
+@import 'settings-nissan';
+@import 'bsp-all';
+
+
+
+// Brand overrides go here
+.logo--header {
+  background: url('../../assets/img/nissan/logo.png') no-repeat;
+  background-position: center 1px;
+  background-size: 97px 120px;
+  background-color: #c3002f;
+  width: 147px;
+
+  img {
+    display: none;
+  }
+}
+
+.logo--headerRight {
+  visibility: hidden;
+}
+
+
+@font-face {
+  font-family: 'Nissan Regular';
+  src: url("../fonts/NissanBrandW01-Regular.eot?#iefix") format("embedded-opentype"),url(../fonts/NissanBrandW01-Regular.woff) format("woff"),url(../fonts/NissanBrandW01-Regular.woff2) format("woff2"),url(../fonts/NissanBrandW01-Regular.ttf) format("truetype");
+  font-weight: 400;
+  font-style: normal
+}
+
+@font-face {
+  font-family: 'Nissan Bold';
+  src: url("../fonts/NissanBrandW01-Bold.eot?#iefix") format("embedded-opentype"),url(../fonts/NissanBrandW01-Bold.woff) format("woff"),url(../fonts/NissanBrandW01-Bold.woff2) format("woff2"),url(../fonts/NissanBrandW01-Bold.ttf) format("truetype");
+  font-weight: 400;
+  font-style: normal
+}
+
+.gizmo__header-title {
+  font-family: 'Nissan Regular';
+  letter-spacing: -1px;
+  font-size: 20px;
+  color: $gizmo__header-title;
+}
+
+.dropdown.menu a.parent-link {
+  font-family: 'Nissan Bold';
+  font-size: 16px;
+  padding: 13px 0px 8px 0px !important;
+  border-bottom: solid 2px transparent;
+
+  &:hover {
+    padding: 13px 0px 8px 0px !important;
+    border-bottom: solid 2px $main-link-color;
+  }
+}
+
+.dropdown.menu a.parent-link--icons {
+  margin-top: -4px;
+  padding-bottom: 28px !important;
+  &:hover {
+    padding-bottom: 28px !important;
+  }
+}
+
+.navigation.sticky.is-anchored {
+  height: 40px;
+}
+
+.navigation, .navigation--mobile {
+  //border-bottom: solid 1px rgba(83,86,81,.2);
+}
+
+.navigation__right {
+  @include breakpoint(771px down) {
+    display: none;
+  }
+}
+
+.dropdown.menu .is-active > a {
+  color: $menu-link-color;
+}
+
+.link-list__link {
+  color: $link-list__link-color;
+}
+.link-list__link:hover {
+  background: #f3f3f3;
+}
+
+.link-list__title {
+  font-weight: 600;
+  font-size: 16px;
+  color: $link-list__title-color;
+}
+
+.navigation__pane--large, .navigation__pane--small {
+  border-top: solid 1px rgba(83,86,81,.2);
+  border-bottom: solid 1px rgba(83,86,81,.2);
+  color:#fff;
+}
+
+.mail-row--menu{
+  .mail-row--menu__title {
+    color:#fff;
+  }
+  &:hover {
+    color:#000;
+    .mail-row--menu__title {
+      color:#000;
+    }
+  }
+}
+
+.is-dropdown-submenu-parent {
+  .navigation__pane--large, .navigation__pane--small {
+    display: none;
+  }
+
+  &.is-active {
+    .navigation__pane--large, .navigation__pane--small {
+      display: block;
+    }
+  }
+}
+
+.btn--icon-reveal {
+  background-color: #fff;
+}
+
+.user-menu__top {
+  .btn--icon-reveal {
+    background-color: #343434;
+    color: #fff;
+  }
+}
+
+.btn--bar--viewall, .btn--bar {
+  border-radius: 0px;
+  background-color: #fff;
+}
+
+.btn--bar--viewall:hover, .btn--bar:hover, .btn--bar--usermenu:hover {
+  background-color: $menu-alt-background-color;
+  color:#fff;
+}
+
+.btn:hover {
+  background-color: #920023;
+}
+
+.adminlinks .link-list li a.link-list__link {
+  color: $menu-link-color;
+}
+
+
+.adminlinks .link-list li a.link-list__link:hover {
+  color: #fff;
+  background:$main-link-color;
+}
+
+.createPromotion ul li::before {
+  background-color: $main-link-color;
+  border: solid 1px #000;
+}
+
+.createPromotion ul li.active::before {
+  background-color: $btn-hover;
+  border: solid 1px #000;
+}
+
+.countSpan {
+  background-color:$main-link-color;
+}
+
+.pagination-ys table td a {
+  background-color: $main-link-color;
+  &:hover {
+    background-color: $btn-hover;
+  }
+}
+
+.icon-row {
+  display: none;
+}
+
+.gizmo--employee-recognition {
+    min-height: 542px;
+}
+
+.gizmo--employee-recognition .forms__input:first-of-type {
+    display: none;
+}
+
+.adminlinks .link-list li .link-list__title {
+  color: #343434;
+  border-bottom: solid 1px rgba(83, 86, 81, 0.2);
+}
+
+.adminlinks .link-list li a[href*="ContactTypeAwardTypeMapping"], .adminlinks .link-list li a[href*="ComingSoon"] {
+  color:#999;
+}
+
+.navigation--mobile {
+  background: $menu-mobile-background-color;
+  color: #fff;
+
+  .logo--navigation--mobile {
+    visibility: hidden;
+  }
+}
+
+.menu-mobile__top {
+  background: $menu-link-color;
+
+  &::before {
+    content: ' ';
+    background: url(../../assets/img/nissan/logo.png) no-repeat;
+    background-position: 0px -2px;
+    background-size: 62%;
+    width: 89px;
+    height: 50px;
+    margin-left: 40px;
+    position: absolute;
+    top: 0px;
+  }
+
+  .menu-mobile__logo {
+    display: none;
+    visibility: hidden;
+  }
+}
+
+.title-bar-title {
+  background: url(../../assets/img/nissan/logo.png) no-repeat;
+  background-position: 0px -8px;
+  background-size: 60%;
+  width: 89px;
+  height: 40px;
+  margin-left: 29px;
+}
+
+.navigation, .header {
+  @include breakpoint(840px down) {
+    padding: 0px 22px 0px 22px;
+  }
+}
+
+.login-box {
+  background: url(../../assets/img/nissan/logo.png) no-repeat #fff;
+  background-size: 110px;
+  background-position: center 12px;
+
+  .logo--login {
+    visibility: hidden;
+    height: 120px;
+  }
+
+  .btn--submit--right:hover {
+    background-color: $btn-hover;
+  }
+}

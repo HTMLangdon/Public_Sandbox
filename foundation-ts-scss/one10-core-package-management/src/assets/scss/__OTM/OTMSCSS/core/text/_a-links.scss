@@ -1,0 +1,12 @@
+a {
+	color: $main-link-color;
+	font-family: $main-font;
+	&:hover {
+		color: $main-link-color;
+		text-decoration: underline;
+	}
+	&:focus {
+		outline: none;
+		color: $main-link-color;
+	}
+}

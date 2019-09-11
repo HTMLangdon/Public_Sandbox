@@ -1,0 +1,37 @@
+/////////////////////////
+///// EMPLOYEE ITEM /////
+/////////////////////////
+.employee-row {
+	@extend .grid-x;
+	.see-more {
+		font-weight: 600;
+	}
+	&__profile-img {
+		@extend .small-2;
+	}
+	&__name {
+		@extend .small-8;
+		h5 {
+			font-size: $main-text-size;
+			color: $name-h5;
+			margin-bottom: 2px;
+			> span {
+				color: $name-dot;
+				padding: 0px 2px;
+			}
+			.title {
+				color: $name-title;
+			}
+		}
+		p {
+			line-height: 17px;
+		}
+	}
+	&__thumb {
+		@extend .small-2;
+		text-align: right;
+		img {
+			width: 22px;
+		}
+	}
+}

@@ -1,0 +1,14 @@
+.btn--expand-arrow {
+	width: 36px;
+	height: 36px;
+	display: block;
+	float: right;
+	color: $button--expand-arrow;
+	&:hover {
+		text-decoration: none;
+	}
+	i {
+		line-height: .5;
+		font-size: 36px;
+	}
+}

@@ -1,0 +1,27 @@
+.btn--icon-large {
+  @extend .btn;
+  padding: 0px;
+  display: inline-block;
+  text-align: center;
+  margin: 35px 0px;
+  background: transparent;
+
+  &:hover, &:focus {
+    background: transparent;
+    .btn--icon-large__text {
+      text-decoration: underline;
+    }
+  }
+
+  &__icon {
+    width: 62px;
+    margin-bottom: 7px;
+  }
+
+  &__text {
+    display: block;
+    font-weight: 600;
+    font-size: $button--icon-large__text-size;
+    color: #163d5c;
+  }
+}

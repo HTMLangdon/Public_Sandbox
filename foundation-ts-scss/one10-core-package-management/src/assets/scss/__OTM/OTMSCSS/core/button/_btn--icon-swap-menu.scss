@@ -1,0 +1,28 @@
+.btn--icon-swap-menu {
+	@extend .btn--icon-swap;
+	$parent: &;
+    color: $menu-link-color;
+    padding:0px !important;
+	&__hidden {
+		@extend .btn--icon-swap__hidden;
+	    #{$parent}:hover & {
+			display:inline-block;
+			opacity: 1;
+		}
+	}
+	%icon-swap {
+		font-size: $button--icon-swap-menu-size;
+    	line-height: normal;
+    	vertical-align: middle;	
+	}
+	&__icon1 {
+		@extend .btn--icon-swap__icon1;
+	}
+	&__icon2 {
+		@extend .btn--icon-swap__icon2;
+	}
+	&:hover {
+		color: $menu-link-color;
+		opacity: 1;
+	}
+}

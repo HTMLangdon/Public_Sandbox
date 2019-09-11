@@ -45,5 +45,6 @@ $(document).ready(function(e) {
 	let stepContentContainer = '#steps-content';
 	STEPPER.setup(stepperContainer, stepContentContainer);
 
-	console.log(STEPPER);
+
+
 });

@@ -1,6 +1,9 @@
 @charset 'utf-8';
 
 
+
+
+
 @import 'settings';
 
 @import 'foundation';
@@ -72,12 +75,9 @@
 .grid-container, .row{max-width:100%}
 
 // @import 'reset-all'
-@import 'partials/fonts';
-
-
 @import 'partials/mixins';
-
-
+@import 'partials/fonts';
+@import 'components/kendo-one10';
 
 
 @import 'partials/components/radios';
@@ -93,3 +93,5 @@
 @import 'custom';
 
 @import 'partials/media-queries';
+
+

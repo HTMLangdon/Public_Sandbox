@@ -43,14 +43,21 @@
         </div>
         <div class="cell small-6">
             <div class="toggle-controller" data-toggle-controller="rDRT">
-                <div data-control="Campaign"  data-bingboom="pewpew">
+                <div style="display: none;" data-control="Campaign">
                     <input class="" type="text" placeholder="Enter Code...">
                 </div>
-                    <div data-control="Program"  data-bongbang="powpoom">
-                    <input class="multiselect" type="text">
+                <div data-control="Program">
+                    <select class="a-kendo-dropdon-multiselect"  multiple="multiple" data-placeholder="Select attendees...">
+                        <option value="">Option1</option>
+                        <option value="">Option2</option>
+                        <option value="">Option3</option>
+                        <option value="">Option4</option>
+                        <option value="">Option5</option>
+                    </select>
+                    <label for="optional">Optional</label>
                 </div>
             </div>
-        
+
         </div>
     </fieldset>
 </div>
@@ -88,7 +95,7 @@
 </script>
 
 
- 
+
 <div class="grid-x">
     <fieldset class="cell small-12 medium-6 large-5">
         <div class="grid-x grid-margin-x align-right">
@@ -96,7 +103,7 @@
                 <label for="start_a">
                     <span>Order Start Date</span>
                     <span class="notation-mark">*</span>
-                    <input type="date" name="" id="" class="datepicker">
+                    <input class="a-kendo-date-picker-template" type="date" name="" id="" class="datepicker">
 
                 </label>
             </div>
@@ -104,7 +111,7 @@
                 <label for="end_a">
                     <span>Order End Date</span>
                     <span class="notation-mark">*</span>
-                    <input type="date" name="" id="" class="datepicker"></label>
+                    <input class="a-kendo-date-picker-template" type="date" name="" id="" class="datepicker"></label>
             </div>
         </div>
     </fieldset>
@@ -117,13 +124,13 @@
                 <label for="start_a">
                     <span>Invoice Start Date</span>
                     <span class="notation-mark">*</span>
-                    <input type="date" name="" id="" class="datepicker"></label>
+                    <input class="a-kendo-date-picker-template" type="date" name="" id="" class="datepicker"></label>
             </div>
             <div class="cell small-6">
                 <label for="end_a">
                     <span>Invoice End Date</span>
                     <span class="notation-mark">*</span>
-                    <input type="date" name="" id="" class="datepicker"></label>
+                    <input class="a-kendo-date-picker-template" type="date" name="" id="" class="datepicker"></label>
             </div>
 
         </div>
@@ -145,7 +152,7 @@
         <div class="grid-x grid-margin-x">
             <div class="cell small-6">
                 <label>
-                    <input type="date" name="" id="" class="datepicker">
+                    <input class="a-kendo-date-picker-template" type="date" name="" id="" class="datepicker">
                 </label>
             </div>
         </div>
@@ -155,3 +162,34 @@
 
     </fieldset>
 </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<fieldset>
+
+    <label class="radio">
+        <input type="radio" name="rDRT">
+        <span><span>Program</span></span>
+    </label>
+
+    <label class="radio">
+        <input type="radio" name="rDRT">
+        <span><span>Campaign</span></span>
+    </label>
+
+</fieldset>

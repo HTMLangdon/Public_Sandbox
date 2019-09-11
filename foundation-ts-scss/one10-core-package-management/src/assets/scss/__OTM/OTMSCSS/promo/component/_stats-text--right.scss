@@ -1,0 +1,13 @@
+.stats-text--right {
+	text-align: right;
+	&__stat {
+		@extend .stats-text__stat, .text-xlarge--gray;
+		float:right;
+		clear:both;
+	}
+	&__label {
+		@extend .stats-text__label;
+		float:right;
+		clear:both;
+	}
+}

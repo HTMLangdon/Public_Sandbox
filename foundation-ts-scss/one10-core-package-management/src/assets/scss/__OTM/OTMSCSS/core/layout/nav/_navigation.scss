@@ -1,0 +1,118 @@
+.navigation {
+  font-size: $menu-link-size;
+  background: $menu-background-color;
+  padding: 0 23px 0 23px;
+  color: $menu-link-color;
+  position: relative;
+  z-index: 4;
+  //height: 40px;
+  float: left;
+  width: 100%;
+
+  @include breakpoint(medium) {
+    padding: 0 44px 0 44px;
+  }
+
+  &.sticky.is-anchored {
+    top: 0px !important;
+  }
+
+  &__left {
+    flex: none;
+    float: left;
+  }
+
+  &__right {
+    flex: none;
+    height: 40px;
+
+    @include breakpoint(medium) {
+      float: right;
+      width: auto;
+    }
+
+    @include breakpoint(small) {
+      float: left;
+      width: 100%;
+    }
+  }
+
+  &__item {
+    position: relative;
+  }
+
+  &__pane {
+    @extend .bottom;
+    background: $menu-dropdown-background;
+    margin: 0 auto;
+    top: 40px;
+    border: none;
+    visibility: visible;
+    display: block;
+    overflow: hidden;
+    max-height: 0px;
+    font-size: $navigation__pane-size;
+
+    &.is-open {
+      padding-top: 8px;
+      visibility: visible;
+      display: block;
+      max-height: 550px;
+      transition: max-height 400ms cubic-bezier(0.17, 0.04, 0.04, 0.94);
+    }
+
+    &__bottomlink {
+      border-top: solid 1px $menu-link-color;
+      font-size: $navigation__pane__bottomlink-size;
+      margin: 0px 14px 0px 20px;
+
+      &--usermenu {
+        @extend .navigation__pane__bottomlink;
+        margin: 27px 0px 0px 0px;
+      }
+    }
+
+    &--large {
+      @extend .navigation__pane;
+      width: 1278px;
+      left: -44px !important;
+      right: 0px !important;
+      padding: 0px 29px;
+      transition: max-height 400ms cubic-bezier(0.17, 0.04, 0.04, 0.94);
+      position: absolute;
+      list-style: none;
+
+      .expanded {
+        padding-top: 35px;
+        padding-bottom: 35px;
+        margin: 0px;
+      }
+
+      &.is-open {
+        visibility: visible;
+        display: block;
+        padding-top: 0px;
+        max-height: 350px;
+        transition: max-height 400ms cubic-bezier(0.17, 0.04, 0.04, 0.94);
+      }
+    }
+
+    &--small {
+      @extend .navigation__pane;
+      width: 324px;
+      left: -151px !important;
+      position: absolute;
+      padding: 0px;
+      top: 40px;
+      transition: max-height 400ms cubic-bezier(0.17, 0.04, 0.04, 0.94);
+    }
+  }
+}
+.sticky-container {
+  @include breakpoint(small) {
+    height: 40px;
+  }
+  .is-dropdown-submenu-parent {
+    position: static;
+  }
+}

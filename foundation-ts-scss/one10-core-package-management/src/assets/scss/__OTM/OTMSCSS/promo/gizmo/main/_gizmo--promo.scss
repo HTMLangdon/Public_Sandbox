@@ -1,0 +1,39 @@
+///////////////////////////
+/////// PROMO GIZMO ///////
+///////////////////////////
+.gizmo--promo {
+	@extend .gizmo;
+	.gizmo__progress {
+		margin-top:9px;
+	}
+	/////// SMALL/EXPANDED BEHAVIOR ///////
+	p, .gizmo__contenttitle, ul, strong, h3 {
+		@extend .gizmo__hide-on-small;
+	}
+	/////// PROMO GIZMO EXPANDED ///////
+	&.gizmo--expanded {
+		@include breakpoint(medium) {
+			width: $gizmo-expanded-width-two-cols;
+			@if $use-percent == true {
+				width: $gizmo-perc-width-two-col;
+			} @else {
+				width: $gizmo-width-two-col;
+			}
+		}
+		@include breakpoint(small) {
+			@if $use-percent == true {
+				width: $gizmo-perc-width-full;
+			} @else {
+				width: $gizmo-width-full;
+			}
+		}
+		.gizmo__content {
+		    display: flex;
+		    padding-bottom:0px;
+			.bold {
+			  font-weight: bold;
+			  margin-left: 0px !important;
+			}
+		}
+	}
+}

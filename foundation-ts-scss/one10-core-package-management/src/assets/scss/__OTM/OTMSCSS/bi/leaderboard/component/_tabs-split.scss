@@ -1,0 +1,57 @@
+// TABBED CONTENT WITHIN GIZMO
+// TWO TABS ONLY
+.tabs-split {
+  &__tabs {
+    @extend .tabs;
+    border: none;
+    border-bottom: solid 1px $tabs-split-tabs-border-bottom;
+    list-style: none;
+    margin: 0px;
+    float: left;
+    width: 100%;
+
+    a {
+      color: $tabs-split-link;
+      font-size: $tabs-split__tabs-link-size;
+      padding-bottom: 10px;
+      outline: none !important;
+
+      &:focus {
+        background: transparent;
+      }
+
+      &:hover {
+        text-decoration: none;
+        color: $tabs-split-link-hover;
+      }
+    }
+  }
+
+  &__panel {
+    @extend .tabs-panel;
+    padding: 0px;
+    float: left;
+    width: 100%;
+  }
+
+  &__content {
+    border: none;
+    min-height: 130px; //recognition drop down menu getting cut off
+  }
+  /////
+  .tabs-title {
+    @extend .text-center;
+    width: 50%;
+    text-transform: uppercase;
+
+    &.is-active {
+      border-bottom: solid 4px $tabs-split-active-border;
+
+      a {
+        background: transparent;
+        font-weight: bold;
+        color: $tabs-split-active-link;
+      }
+    }
+  }
+}

@@ -1,0 +1,10 @@
+.text-medium--gray {
+	font-size: $text-medium-size;
+	line-height: 26px;
+	color: $text-medium--gray;
+	opacity: .33;
+	&--bold {
+		@extend .text-medium--gray;
+		font-weight: bold;
+	}
+}

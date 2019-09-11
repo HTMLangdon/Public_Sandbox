@@ -1,0 +1,17 @@
+///////  STRUCTURE SIZES  //////
+.main {
+	font-family: $main-font;
+	max-width: $main-width-max;
+    min-width: $main-width-min;
+	width: auto;
+	font-size: $main-text-size;
+	margin-left:300px;
+	background: $main-content-bgcolor;
+    border:none;
+}
+
+.main-content {
+	padding: $main-container-padding;
+	width:100%;
+	margin:0 auto;
+}

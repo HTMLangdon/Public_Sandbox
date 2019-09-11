@@ -1,0 +1,22 @@
+/////////////////////////////////////////
+/////// PROMO SPLIT CONTENT GIZMO ///////
+/////////////////////////////////////////
+.gizmo--promo-split {
+	@extend .gizmo;
+	position: relative;
+	overflow: hidden;
+
+	/////// SMALL/EXPANDED BEHAVIOR ///////
+	p, .gizmo__contenttitle, ul, strong, h3 {
+		@extend .gizmo__hide-on-small;
+	}
+
+	/////// PROMO SPLIT CONTENT GIZMO EXPANDED ///////
+	&.gizmo--expanded {
+		width: $gizmo-expanded-width-two-cols;
+		.gizmo--promo-split__right-col {
+			width:50%;
+			float:right;
+		}
+	}
+}

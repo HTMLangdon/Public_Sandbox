@@ -1,0 +1,37 @@
+.btn--bar {
+	@extend .btn;
+	width: 324px;
+	padding: 10px 14px 17px 20px !important;
+    margin-left: -20px;
+    color: $menu-link-color;
+    text-decoration: none;
+	&:hover {
+		color: $menu-link-color;
+		padding: 10px 14px 17px 20px;
+		background: $menu-background-color;
+		border-bottom:none;
+		text-decoration: none;
+	}
+	&--usermenu {
+		@extend .btn--bar;
+		border-bottom: 0px;
+		color: $menu-link-color;
+		text-decoration: none;
+	}
+	&--viewall {
+		@extend .btn--bar;
+		margin-left: 0px;
+		padding: 10px !important;
+		width:100%;
+		clear:both;
+		border-bottom: 0px;
+		color: $menu-link-color;
+		&:hover {
+			color: $menu-link-color;
+			text-decoration: none;
+			padding: 10px;
+			background: $menu-background-color;
+			border-bottom:none;
+		}
+	}
+}

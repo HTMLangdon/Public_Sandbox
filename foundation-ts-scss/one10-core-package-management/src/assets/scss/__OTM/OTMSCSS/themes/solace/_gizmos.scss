@@ -1,0 +1,30 @@
+//////// gizmos ////////
+.gizmo {
+	width: 30%;
+	min-width: 310px;
+	border-radius: 10px;
+	box-shadow: none;
+	.gizmo__content {
+		width: 100%;
+	}
+	&:hover {
+		box-shadow: none;
+		border: none;
+		transition: border 0.3s ease-in-out;
+	}
+}
+
+
+// DEMO gizmos
+.gizmo--expanded.gizmo--promo-split, .gizmo--expanded.gizmo--promo, .gizmo--expanded.gizmo--program-earnings {
+	width: 61%;
+	height: auto;
+}
+
+.data-row__cell {
+	@extend .small-6, .cell;
+	&--right {
+		@extend .small-6, .cell, .text-right;
+		padding-right: 0px;
+	}
+}

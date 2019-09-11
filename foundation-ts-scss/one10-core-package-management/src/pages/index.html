@@ -6,35 +6,59 @@ h2_step_title: 'DEFAULT VALUE'
 
 {{>_header}}
 
+<script>
 
-  <main>
+  $(document).ready(function (e)
+  {
 
-    <div class="grid-x align-left">
-      <div class="cell">
-        <h1>{{h1_title}}</h1>
-      </div>
-      <div class="cell">
-        {{> _stepper count=number_of_steps}}
-      </div>
+    $(".a-kendo-date-picker-template").kendoDatePicker({
+      // defines the start view
+      start: "year",
+
+      // defines when the calendar should return date
+      depth: "year",
+
+      // display month and year in the input
+      format: "MMMM yyyy",
+
+      // specifies that DateInput is used for masking the input element
+      dateInput: true
+    });
+
+    $(".a-kendo-dropdon-multiselect").kendoMultiSelect().data("kendoMultiSelect");
+
+
+  })
+</script>
+
+<main>
+
+  <div class="grid-x align-left">
+    <div class="cell">
+      <h1>{{h1_title}}</h1>
     </div>
-
-
-    <div id="steps-content">
-      
-      <div id="step1" class="step-content">{{> _pg-content-step1 parent=..}}</div>
-      <div id="step2" class="step-content">{{> _pg-content-step2 parent=..}}</div>
-      <div id="step3" class="step-content">{{> _pg-content-step3 parent=..}}</div>
-
+    <div class="cell">
+      {{> _stepper count=number_of_steps}}
     </div>
+  </div>
+
+
+  <div id="steps-content">
+
+    <div id="step1" class="step-content">{{> _pg-content-step1 parent=..}}</div>
+    <div id="step2" class="step-content">{{> _pg-content-step2 parent=..}}</div>
+    <div id="step3" class="step-content">{{> _pg-content-step3 parent=..}}</div>
+
+  </div>
 
 
 
 
-    {{>fndn-accordian}}
 
 
 
 
-  </main>
 
-  {{> _footer}}
+</main>
+
+{{> _footer}}

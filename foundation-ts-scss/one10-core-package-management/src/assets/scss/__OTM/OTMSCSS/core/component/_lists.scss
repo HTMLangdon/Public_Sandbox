@@ -1,0 +1,11 @@
+///////  DEFAULT LISTS  ///////
+ul {
+	line-height: normal;
+	& > ul {
+		list-style-type: circle;
+	}
+	&.contact-list, &.single-bullet {
+		list-style-type: none;
+		margin-left: 0px;
+	}
+}

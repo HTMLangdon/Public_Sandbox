@@ -1,0 +1,24 @@
+.body {
+  @extend .grid-container;
+  font-family: $main-font;
+  max-width: $main-width;
+  min-width: 340px;
+  //min-width: $main-width;
+  font-size: $main-text-size;
+  padding: 0px;
+  overflow-x: hidden;
+
+  @include breakpoint(medium) {
+    border-left: 1px solid $main-content-border-color;
+    border-right: 1px solid $main-content-border-color;
+  }
+
+  &--wide {
+    @extend .body;
+    max-width: 100%;
+  }
+
+  &--bgcolor {
+    background: $main-content-bgcolor;
+  }
+}

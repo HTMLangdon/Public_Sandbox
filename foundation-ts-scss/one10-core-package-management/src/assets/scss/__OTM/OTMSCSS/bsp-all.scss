@@ -1,0 +1,157 @@
+@charset 'utf-8';
+///// LOAD UTILS /////
+// LOAD FOUNDATION
+@import 'utils/foundation-load';
+// MIXINS
+@import 'utils/mixins';
+// SETTINGS
+//@import 'utils/platform-settings';
+// ANIMATIONS
+@import 'utils/animation';
+// MASONRY DYNAMIC SIZER
+@import 'utils/grid-sizer';
+
+//DATATABLES SORTING
+@import 'utils/datatables';
+
+///// LOAD KENDO /////
+
+// @import 'vendor/kendo';
+// @import 'vendor/kendo-overrides';
+
+///// LOAD BASE /////
+// FONTS
+@import 'core/text/fonts';
+
+// A-TAG DEFAULTS
+@import 'core/text/a-links';
+
+// H1-H6 TAG DEFAULTS
+@import 'core/text/header-tags';
+
+// PARAGRAPH TAG DEFAULTS
+@import 'core/text/paragraph';
+
+// LISTS DEFAULTS
+@import 'core/component/lists';
+
+// ICON DEFAULTS
+@import 'core/component/icons';
+
+// OVERLAYS AND SPINNING ICONS
+@import 'core/component/overlay';
+
+// FULLSCREEN GIZMO
+@import 'core/layout/component/off-canvas';
+
+///// LAYOUT //////
+@import 'core/layout/component/body';
+@import 'core/layout/component/main-content';
+@import 'core/layout/header/header';
+@import 'core/layout/header/header--side-nav';
+@import 'core/layout/footer/footer';
+@import 'core/layout/login/login';
+
+
+
+////// LOAD PAGES //////
+//PAGE SPECIFIC STYLES GET LOADED HERE
+@import 'core/layout/login/login-box';
+//@import 'promo/component/default-rules-table'; //not sure if this is where this should go. @josh
+
+////// COMPONENTS //////
+// BUTTONS
+@import 'core/button/button';
+@import 'core/button/btn';
+@import 'core/button/btn--bubble';
+@import 'core/button/btn--icon-reveal';
+@import 'core/button/btn--icon-swap';
+@import 'core/button/btn--icon-swap-menu';
+@import 'core/button/btn--bar';
+@import 'core/button/btn--icon-large';
+@import 'core/button/btn--expand-arrow';
+@import 'core/button/btn--actionbar';
+@import 'core/button/btn--download';
+@import 'core/button/btn--submit';
+@import 'core/button/btn--icon';
+//@import 'core/button/btn--secondary'; //this needs to go in all the BSPs to work, but I dont have access to them all @josh
+
+////// COMPONENTS //////
+// BUTTONS
+@import 'core/text/title';
+@import 'core/text/text-medium--gray';
+@import 'core/text/text-xlarge--gray';
+
+// FORMS
+@import 'core/form/forms';
+@import 'core/input/input';
+@import 'core/form/form-error';
+@import 'core/input/input-password';
+@import 'core/input/input--label-under';
+@import 'core/input/input-password--label-under';
+@import 'core/input/input-switch';
+
+// TABLES
+@import 'core/table/table';
+@import 'core/gizmo/table/table--gizmo';
+@import 'core/gizmo/table/table--default';
+
+// NAVIGATION
+@import 'core/layout/nav/parent-link';
+@import 'core/layout/nav/parent-link--icons';
+@import 'core/layout/nav/link-list';
+@import 'core/layout/nav/navigation';
+@import 'core/layout/nav/user-menu';
+@import 'core/layout/nav/navigation--left';
+@import 'core/layout/nav/menu-drilldown';
+@import 'core/layout/nav/navigation--mobile';
+@import 'core/layout/nav/menu-mobile';
+
+// CONTENT BLOCKS
+@import 'core/layout/component/logo';
+@import 'core/component/desc-row';
+@import 'bi/leaderboard/component/leaderboard-row';
+@import 'promo/game/component/game-row';
+@import 'promo/game/component/token-total';
+@import 'communications/nav/mail-row';
+@import 'communications/nav/mail-row--menu';
+@import 'recognition/component/employee-row';
+@import 'core/component/img--round';
+@import 'core/text/text';
+@import 'bi/leaderboard/component/tabs-split';
+@import 'promo/component/stats-text';
+@import 'promo/component/stats-text--right';
+@import 'core/component/icon-row';
+@import 'core/component/data-row';
+@import 'core/component/banner';
+@import 'core/gizmo/grid/grid-gizmo-size';
+@import 'promo/admin/breadcrumb';
+@import 'core/component/page-error';
+@import 'core/component/accordionx';
+@import 'core/component/loading-modal';
+
+
+//////// GIZMOS ////////
+// BASE GIZMO STYLING 
+@import 'core/gizmo/main/gizmo';
+
+// INDIVIDUAL GIZMO STYLES
+@import 'core/gizmo/main/gizmo--general';
+@import 'promo/gizmo/component/gizmo--promo-split';
+@import 'promo/gizmo/main/gizmo--promo';
+@import 'earnings/gizmo/main/gizmo--program-earnings';
+@import 'communications/gizmo/main/gizmo--announcements';
+@import 'communications/gizmo/main/gizmo--messages';
+@import 'bi/gizmo/main/gizmo--leaderboard';
+@import 'recognition/gizmo/main/gizmo--employee-recognition';
+@import 'recognition/gizmo/main/gizmo--recognitionv1';
+@import 'recognition/component/recognition-row';
+@import 'core/gizmo/main/gizmo--basic';
+@import 'core/gizmo/table/responsive-card-table';
+
+// CONVERSION OF V1 TO V2
+@import 'utils/v1convert';
+
+@import 'core/doc/md';
+
+@import 'vendor/botchat';

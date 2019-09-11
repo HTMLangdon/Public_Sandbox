@@ -1,0 +1,66 @@
+.promotionBreadcrumb {
+
+    .ul {
+      align-content: center;
+      align-items: center;
+      counter-reset: stepCount;
+      display: flex;
+      justify-content: space-around;
+      /* margin: 10vh auto 15vh; */
+      font-size: 1.3em;
+      width: 100%;
+      padding-left: 5.4%;
+      margin: 33px 5px;
+    }
+
+    .li {
+      background-color: #979797;
+      color: white;
+      content: ' ';
+      display: flex;
+      flex-grow: 1;
+      height: .13em;
+      line-height: 1em;
+      margin: 0;
+      position: relative;
+      text-align: right;
+      z-index: 1;
+    }
+
+    .li::before {
+      color: #003e52;
+      background-color: #d1ecef;
+      border: solid 1px #003e52;
+      border-radius: 50%;
+      counter-increment: stepCount;
+      content: counter(stepCount);
+      height: 2.2em;
+      left: -2em;
+      line-height: 2.1em;
+      position: absolute;
+      text-align: center;
+      top: -1em;
+      width: 2.2em;
+    }
+
+    .li.active::before {
+      color: #fff;
+      background-color: #003e52;
+      border: solid 1px #003e52;
+    }
+
+    .li.active ~ li {
+    }
+
+    .li.active ~ li::before {
+      background-color: #003e52;
+      border: solid 1px #003e52;
+      color: #fff;
+    }
+
+    .li:last-child {
+      flex-basis: 0;
+      flex-grow: 0;
+      flex-shrink: 1;
+    }
+}

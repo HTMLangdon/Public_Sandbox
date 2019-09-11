@@ -1,0 +1,14 @@
+//@import 'utils/_platform-settings';
+@import 'settings-brandx';
+@import 'bsp-all';
+
+////////// THEME /////////////
+// THEME COLORS
+@import 'themes/solace/fonts';
+@import 'themes/solace/foundation-icons';
+@import 'themes/solace/platform-settings';
+
+// THEME STYLING
+@import 'themes/solace/layout';
+@import 'themes/solace/footer';
+@import 'themes/solace/gizmos';

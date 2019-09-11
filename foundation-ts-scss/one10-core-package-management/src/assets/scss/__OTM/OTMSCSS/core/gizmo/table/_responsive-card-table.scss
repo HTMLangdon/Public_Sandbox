@@ -1,0 +1,78 @@
+$responsive-card-table-bottom-gap: 1.5rem;
+$responsive-card-table-border: solid 1px #CAC8C8;
+$responsive-card-table-stack-point: 1023px;
+$responsive-card-table-label-bg: #fff;
+
+.responsive-card-table {
+  border-collapse: collapse;
+
+  &.unstriped tbody {
+    background-color: transparent;
+  }
+
+  th {
+    background-color: $responsive-card-table-label-bg;
+  }
+
+  tr,
+  th,
+  td {
+    //border: $responsive-card-table-border;
+  }
+
+  @media screen and (max-width: $responsive-card-table-stack-point) {
+    thead tr {
+      position: absolute;
+      top: -9999em;
+      left: -9999em;
+    }
+
+    tr {
+      border-bottom: $responsive-card-table-border !important;
+      display: block;
+    }
+
+    tr + tr {
+      margin-top: $responsive-card-table-bottom-gap;
+    }
+    /* Get table cells to act like rows */
+
+    td {
+      border: none;
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      //border-bottom: $responsive-card-table-border;
+      padding-left: 50%;
+      position: relative;
+      color: #000 !important;
+      display: block;
+      text-align: right;
+
+      &:before {
+        content: attr(data-label);
+        display: inline-block;
+        line-height: 1.5;
+        margin-left: -100%;
+        width: 100%;
+        position: relative;
+        z-index: 1;
+        text-align: left;
+        color: #000;
+        opacity: .54;
+        float: left;
+      }
+
+      &:after {
+        content: '';
+        position: absolute;
+        background: $responsive-card-table-label-bg;
+        width: 50%;
+        left: 1px;
+        top: 1px;
+        z-index: 0;
+        float: left;
+      }
+    }
+  }
+}

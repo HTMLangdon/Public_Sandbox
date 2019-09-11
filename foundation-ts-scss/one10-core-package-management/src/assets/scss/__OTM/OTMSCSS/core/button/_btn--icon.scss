@@ -1,0 +1,19 @@
+.btn--icon {
+	float: right;
+	i {
+		display: inline-block;
+    	vertical-align: top;
+	}
+	&-show-expanded {
+		@extend .btn--icon;
+		margin-bottom: 10px;
+		display: none;
+		.off-canvas & {
+			display: block;
+		}
+		&-left {
+			@extend .btn--icon-show-expanded;
+			float: left;
+		}
+	}
+}

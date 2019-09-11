@@ -1,0 +1,6 @@
+.icon-row {
+	@extend .grid-x;
+	&__icon {
+		@extend .small-3;
+	}
+}

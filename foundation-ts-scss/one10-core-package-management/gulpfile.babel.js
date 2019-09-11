@@ -84,7 +84,7 @@ gulp.series(clean, gulp.parallel(pages, javascript, images, copy), sass, styleGu
 
 
 gulp.task('build',
-  gulp.series(clean, gulp.parallel(pages, BrowserfyTSify, images, copy), sass, styleGuide));
+  gulp.series(clean, gulp.parallel(pages, BrowserfyTSify, images,javascript,  copy), sass, styleGuide));
 
 // Build the site, run the server, and watch for file changes
 gulp.task('default',
@@ -221,17 +221,10 @@ let webpackConfig = {
 // Combine JavaScript into one file
 // In production, the file is minified
 function javascript() {
-  return gulp.src(PATHS.entries)
-    .pipe(named())
-    .pipe($.sourcemaps.init())
-    .pipe(webpackStream(webpackConfig, webpack2))
-    .pipe($.if(PRODUCTION, $.uglify()
-      .on('error', e => {
-        console.log(e);
-      })
-    ))
-    .pipe($.if(!PRODUCTION, $.sourcemaps.write()))
-    .pipe(gulp.dest(PATHS.dist + PATHS.js));
+
+  return gulp.src("src/assets/js/kendo/*.min.js")
+
+    .pipe(gulp.dest("dist/js/vendor"));
 }
 
 // Copy images to the "dist" folder
@@ -268,6 +261,7 @@ function watch() {
   gulp.watch('src/data/**/*.{js,json,yml}').on('all', gulp.series(resetPages, pages, browser.reload));
   gulp.watch('src/helpers/**/*.js').on('all', gulp.series(resetPages, pages, browser.reload));
   gulp.watch('src/assets/scss/**/*.scss').on('all', sass);
+  gulp.watch('node_modules/@progress/kendo-theme-material/scss/**/*.scss').on('all', sass);
   gulp.watch('src/assets/js/**/*.js').on('all', gulp.series(javascript, browser.reload));
   gulp.watch('src/assets/ts/**/*.ts').on('all', gulp.series(BrowserfyTSify, browser.reload));
   gulp.watch('src/assets/img/**/*').on('all', gulp.series(images, browser.reload));

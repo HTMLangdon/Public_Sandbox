@@ -1,0 +1,27 @@
+//////////////////////////////////
+///// LEADERBOARD ITEM ENTRY /////
+//////////////////////////////////
+.leaderboard-row {
+	padding: 10px 5px;
+	border-bottom:solid 1px $leaderboard-row-border-bottom;
+	color: $leaderboard-row-font;
+	line-height: 38px;
+	float: left;
+	width: 100%;
+	&:first-child {
+		background: $leaderboard-row-bgcolor-first;
+		border-bottom: dashed 1px $leaderboard-row-border-bottom-first;
+		font-weight: bold;
+	}
+	&__profile-img {
+		text-align: center;
+	}
+	&__rank {
+		padding-left: 10px;
+	}
+	&__points {
+		font-size: $leaderboard-row__points-size;
+		color: $leaderboard-row__points-color;
+		font-weight: 700;
+	}
+}

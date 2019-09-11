@@ -1,0 +1,51 @@
+//////////////////////////////////
+/////////// GAME ROW  ////////////
+//////////////////////////////////
+.game-row {
+  padding: 10px 5px;
+  border-bottom: solid 1px $leaderboard-row-border-bottom;
+  color: $leaderboard-row-font;
+  line-height: 38px;
+  float: left;
+  width: 100%;
+
+  &:first-child {
+    margin-top: 10px;
+    border-top: solid 1px $leaderboard-row-border-bottom;
+    border-bottom: solid 1px $leaderboard-row-border-bottom;
+  }
+
+  &__tokens {
+    @extend .text--gray--small;
+    line-height: 1.2;
+    opacity: 1 !important;
+
+    strong {
+      width: 100%;
+      display: block !important;
+      opacity: 1;
+      font-size: 16px;
+      margin-top: 0px;
+    }
+  }
+
+  &__profile-img {
+    text-align: center;
+  }
+
+  &__rank {
+    padding-left: 10px;
+  }
+
+  &__points {
+    font-size: $leaderboard-row__points-size;
+    color: $leaderboard-row__points-color;
+    font-weight: 700;
+  }
+
+  .material-icons {
+    font-size: 24px;
+    color: #215767;
+    vertical-align: middle;
+  }
+}

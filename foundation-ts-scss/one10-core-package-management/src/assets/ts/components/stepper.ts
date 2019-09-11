@@ -89,7 +89,11 @@ class Stepper {
 		this._buttons = [].slice.call(this._wrapper.children);
 		
 		this._pages = [].slice.call(document.querySelectorAll(selectorOf_pages)[0].children);
-		
+
+		this._pages.forEach(element => {
+			$(element).hide()
+			
+		});
 		this.l(`HTML content for each step: ${this._pages} \n\n`);
 		this.l(`HTMLElement container for step buttons = \n ${this._wrapper}`)
 		

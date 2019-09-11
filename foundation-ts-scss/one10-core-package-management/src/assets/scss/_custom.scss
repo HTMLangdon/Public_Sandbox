@@ -1,415 +1,335 @@
-
-
-
-
-
-
-
-
 h1 {
-    font-family: OpenSans;
-    font-size: 20px;
-    text-transform: uppercase;
+	font-family: OpenSans;
+	font-size: 20px;
+	text-transform: uppercase;
 }
 
 h2 {
-    font-family: OpenSans_700;
-    font-size: 16px;
-    text-transform: uppercase;
-    // margin: 0 0 0 0;
-    // padding: 20px 0 0 0;
+	font-family: OpenSans_700;
+	font-size: 16px;
+	text-transform: uppercase;
+	// margin: 0 0 0 0;
+	// padding: 20px 0 0 0;
 }
-
 
 span {
-    display: inline-block;
+	display: inline-block;
 }
 
-
-
-// TEXT that is preceeded or a notation of text with an asterisk 
+// TEXT that is preceeded or a notation of text with an asterisk
 .notation-body {
-    // margin: 7px 0 0 0;
-    font-size: 12px;
+	// margin: 7px 0 0 0;
+	font-size: 12px;
 
-    &.italic {
-        font-style: italic;
-    }
+	&.italic {
+		font-style: italic;
+	}
 }
-
 
 * {
-    font-family: OpenSans;
-    font-size: 14px;
-    margin: 0px 0px 0px 0px;
-    padding: 0px 0px 0px 0px;
-    box-sizing: border-box !important;
+	font-family: OpenSans;
+	font-size: 14px;
+	margin: 0px 0px 0px 0px;
+	padding: 0px 0px 0px 0px;
+	box-sizing: border-box !important;
 }
 
-
 .clear {
-    clear: both;
+	clear: both;
 }
 
 .uppercase {
-    text-transform: uppercase !important;
+	text-transform: uppercase !important;
 }
 
 .txt700,
 .bold {
-    font-family: OpenSans_700 !important;
+	font-family: OpenSans_700 !important;
 }
 
 .txt400,
 .normal {
-    font-family: OpenSans !important;
-    font-weight: normal;
-    font-style: normal;
+	font-family: OpenSans !important;
+	font-weight: normal;
+	font-style: normal;
 }
 
 hr {
-    // margin: 0 0 0 0;
-    // padding: 0 0 0 0;
-    height: 4px;
-    border-color: #979797;
+	// margin: 0 0 0 0;
+	// padding: 0 0 0 0;
+	height: 4px;
+	border-color: #979797;
 }
 
 // All font-family set here:
 
 label {
-    &:not(.radio) {
-        >*:first-child {
-            font-family: OpenSans_700;
-            // outline: 1px solid green;
-            // margin: 33px 0 7px 0;
+	&:not(.radio) {
+		> *:first-child {
+			font-family: OpenSans_700;
+			// outline: 1px solid green;
+			// margin: 33px 0 7px 0;
+		}
 
-        }
+		> *:last-child {
+			// outline: 1px solid blue;
+		}
+	}
 
-        >*:last-child {
-            // outline: 1px solid blue;
-        }
-    }
+	&.radio {
+		> span:first-of-type {
+			// outline: 1px solid orange;
+			font-family: OpenSans;
 
-    &.radio {
-        >span:first-of-type {
-
-            // outline: 1px solid orange;
-            font-family: OpenSans;
-
-            span {
-                font-family: OpenSans;
-            }
-        }
-    }
+			span {
+				font-family: OpenSans;
+			}
+		}
+	}
 }
-
 
 legend {
-    font-family: OpenSans_700;
+	font-family: OpenSans_700;
 
-    >*:first-child {
-        font-family: OpenSans_700;
-        // outline: 1px solid purple;
-    }
+	> *:first-child {
+		font-family: OpenSans_700;
+		// outline: 1px solid purple;
+	}
 
-    span {
-        font-family: OpenSans;
+	span {
+		font-family: OpenSans;
 
-        //this is the element equal to label:not(.radio){>*:first-child{}}
-        &:first-child {
-            font-family: OpenSans_700;
-            // outline:1px solid lightgreen;
-            // margin: 33px 0 7px 0;
-        }
-    }
-
+		//this is the element equal to label:not(.radio){>*:first-child{}}
+		&:first-child {
+			font-family: OpenSans_700;
+			// outline:1px solid lightgreen;
+			// margin: 33px 0 7px 0;
+		}
+	}
 }
 
-
-
-
-
-
-
-
 main {
+	margin-bottom: $sticky-footer-height;
+	margin-left: 40px;
 
-    margin-bottom: $sticky-footer-height;
-    margin-left: 40px;
+	fieldset {
+		// padding-bottom: 20px;
+	}
 
-    fieldset {
-        // padding-bottom: 20px;
-    }
+	> .grid-x {
+		&:first-of-type {
+			> .cell:first-of-type {
+				> h1:first-of-type {
+					//very first h1 within the first .cell of the first .grid-x
+				}
+			}
+		}
+	}
 
-
-
-    >.grid-x {
-        &:first-of-type {
-            >.cell:first-of-type {
-                >h1:first-of-type {
-                    //very first h1 within the first .cell of the first .grid-x
-                }
-            }
-        }
-    }
-
-    // all direct descendants of '<main>' with the class '.grid-x'
-    >.grid-x {
-
-        /*
+	// all direct descendants of '<main>' with the class '.grid-x'
+	> .grid-x {
+		/*
 very first element in <main> with class .grid-x
 should be the stepper container
 */
-        &:first-of-type {
-            // margin: 25px 0px 25px 0;
+		&:first-of-type {
+			// margin: 25px 0px 25px 0;
 
-            :first-child {
-                &.cell {
-                    // margin: 0 0 20px 0;
-                }
-            }
+			:first-child {
+				&.cell {
+					// margin: 0 0 20px 0;
+				}
+			}
 
-            /*
+			/*
 target container of <h1>    
 */
-            >h1:first-child {}
+			> h1:first-child {
+			}
 
-            /*
+			/*
 target container of <div class="stepper">    
 */
-            >*:last-child {}
+			> *:last-child {
+			}
+		}
+	}
 
-        }
-    }
-
-    //margin under <h2>
-    .step-content {
-        >.grid-x {
-
-            /*
+	//margin under <h2>
+	.step-content {
+		> .grid-x {
+			/*
     very first element in <main> with class .grid-x
     should be the stepper container
 */
-            &:first-of-type {
-                // margin: 0px 0px 25px 0;
+			&:first-of-type {
+				// margin: 0px 0px 25px 0;
 
-                :first-child {
-                    &.cell {
-                        // margin: 25px 0px 5px 0;
+				:first-child {
+					&.cell {
+						// margin: 25px 0px 5px 0;
+					}
+				}
+			}
 
-                    }
-                }
-            }
+			&:not(:first-of-type) {
+				// margin-bottom: 33px;
+			}
+		}
 
-            &:not(:first-of-type) {
-                // margin-bottom: 33px;
-            }
-        }
+		> .grid-x:first-child {
+			// margin-bottom: 15px;
+		}
 
-        >.grid-x:first-child {
-            // margin-bottom: 15px;
-        }
-
-        .grid-x {
-            // margin-bottom: 25px;
-        }
-
-    }
-
+		.grid-x {
+			// margin-bottom: 25px;
+		}
+	}
 }
 
-
-
-
-
 .button-container {
-    label {
-
-        p,
-        span:first-child {
-            font-family: OpenSans;
-        }
-    }
+	label {
+		p,
+		span:first-child {
+			font-family: OpenSans;
+		}
+	}
 }
 
 button {
-    cursor: pointer;
-    outline: none;
+	cursor: pointer;
+	outline: none;
 
-    * {
-        display: inline-block;
-    }
+	* {
+		display: inline-block;
+	}
 
-    &.square {
-        &.fixed {
-            width: 142px;
-            height: 40px;
-        }
+	&.square {
+		&.fixed {
+			width: 142px;
+			height: 40px;
+		}
 
-        &.full {
-            width: auto;
-            height: auto;
-            padding: 15px;
-        }
+		&.full {
+			width: auto;
+			height: auto;
+			padding: 15px;
+		}
 
+		background-color: $michelin-primary-rgba;
 
-        background-color: $michelin-primary-rgba;
+		&.disabled {
+			background-color: $michelin-disabled-bg-rgba;
 
-        &.disabled {
-            background-color: $michelin-disabled-bg-rgba;
+			span {
+				color: $michelin-disabled-txt-rgba;
+			}
+		}
 
-            span {
-                color: $michelin-disabled-txt-rgba;
-            }
-        }
+		color: white;
+	}
 
+	&.rounded {
+		border-radius: 15px;
+		background-color: rgba(255, 255, 255, 1);
+		border: 1px solid #27509b;
+	}
 
-
-        color: white;
-    }
-
-    &.rounded {
-        border-radius: 15px;
-        background-color: rgba(255, 255, 255, 1);
-        border: 1px solid #27509b;
-    }
-
-    &.add-address {
-        height: 30px;
-        width: 135px;
-
-    }
-
+	&.add-address {
+		height: 30px;
+		width: 135px;
+	}
 }
 
 .icon {
-    background-color: rgba(255, 255, 255, 0);
-    position: relative;
-    width: 28px;
-    height: 28px;
-    margin: 0 0 0 0;
-    padding: 0 0 0 0;
-    border-radius: 8px;
-    -webkit-border-radius: 8px;
-    -moz-border-radius: 8px;
+	background-color: rgba(255, 255, 255, 0);
+	position: relative;
+	width: 28px;
+	height: 28px;
+	margin: 0 0 0 0;
+	padding: 0 0 0 0;
+	border-radius: 8px;
+	-webkit-border-radius: 8px;
+	-moz-border-radius: 8px;
 
-    &.plus {
-        width: 14px;
-        height: 14px;
-        top: 2px;
-        left: -7px;
+	&.plus {
+		width: 14px;
+		height: 14px;
+		top: 2px;
+		left: -7px;
 
-        &:before,
-        &:after {
+		&:before,
+		&:after {
+			background-color: #27509b;
+			border-radius: 1px;
+			-webkit-border-radius: 1px;
+			-moz-border-radius: 1px;
+			position: absolute;
+			content: "";
+		}
 
-            background-color: #27509b;
-            border-radius: 1px;
-            -webkit-border-radius: 1px;
-            -moz-border-radius: 1px;
-            position: absolute;
-            content: "";
-        }
+		&:before {
+			width: 2px;
+			height: 14px;
+			top: 0px;
+			left: 6px;
+		}
 
-        &:before {
-            width: 2px;
-            height: 14px;
-            top: 0px;
-            left: 6px;
-        }
-
-        &:after {
-            width: 14px;
-            height: 2px;
-            top: 6px;
-            left: 0px;
-        }
-
-    }
+		&:after {
+			width: 14px;
+			height: 2px;
+			top: 6px;
+			left: 0px;
+		}
+	}
 }
-
-
-
 
 //margin under <h2>
 .step-content {
-    div &.grid-x:first-child {
-        // margin-bottom: 15px;
-
-    }
+	div &.grid-x:first-child {
+		// margin-bottom: 15px;
+	}
 }
 
 .grid-x {
+	margin-bottom: 15px;
 
-    margin-bottom: 15px;
-
-    .grid-x {
-        margin-bottom: 0px;
-    }
+	.grid-x {
+		margin-bottom: 0px;
+	}
 }
 
 .cell {
+	// padding: 0 0 0px 0;
+	+ label {
+		span {
+		}
 
-    // padding: 0 0 0px 0;
-    +label {
-        span {}
+		// padding-top:10px;
 
-        // padding-top:10px;
-
-        &.radio {
-            &.float-left {}
-        }
-    }
+		&.radio {
+			&.float-left {
+			}
+		}
+	}
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 #section-zones {
-    margin-top: 30px;
+	margin-top: 30px;
 }
 
 ul {
+	&.zones {
+		margin-top: 5px;
+		list-style: none;
 
-    &.zones {
-        margin-top: 5px;
-        list-style: none;
-
-        li {
-
-            &.zone-node {
-
-                // padding-bottom: 20px;
-
-            }
-        }
-    }
+		li {
+			&.zone-node {
+				// padding-bottom: 20px;
+			}
+		}
+	}
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 /*
 
@@ -466,3 +386,84 @@ height: 40px;
 
 
 */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[type='text'],
+[type='textarea'],
+[type='password'],
+[type='date'],
+[type='datetime'],
+[type='datetime-local'],
+[type='month'],
+[type='week'],
+[type='email'],
+[type='number'],
+[type='search'],
+[type='tel'],
+[type='time'],
+[type='url'],
+[type='color'],
+textarea {
+    &.k-input{
+        border: 1px solid $michelin-secondary-rgba;
+        box-shadow: none;
+        transition: .25s ease-in-out;
+        height: 40px;
+        margin: 0 0 0 0;
+        padding:0 0 0 0;
+
+    }
+
+
+    &:hover {
+        // border:1px solid light.en($michelin-secondary-rgba, 30%);
+        // box-shadow: inset 0 1px 2px $michelin-secondary-rgba;
+    }
+
+    &:focus {
+        box-shadow: inset 0 1px 2px darken($michelin-secondary-rgba, 5%);
+        border: 1px solid $michelin-secondary-rgba;
+    }
+}
+
+// override input && textarea height (was 40)
+textarea {
+    min-height: 84px;
+}
+
+
+span {
+    display: inline-block;
+}
+
+.notation-body {
+    margin: 7px 0 0 0;
+    ;
+    font-size: 12px;
+
+    &.italic {
+        font-style: italic;
+    }
+}

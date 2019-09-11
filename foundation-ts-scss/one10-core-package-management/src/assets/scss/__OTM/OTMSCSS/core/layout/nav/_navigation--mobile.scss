@@ -1,0 +1,7 @@
+.navigation--mobile {
+  @extend .title-bar, .navigation, .hide-for-medium;
+  height: 40px;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+}

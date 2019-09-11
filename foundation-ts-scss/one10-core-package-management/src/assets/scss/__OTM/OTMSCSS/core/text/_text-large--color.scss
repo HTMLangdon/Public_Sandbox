@@ -1,0 +1,9 @@
+.text-large--color {
+	@extend .text-large--gray;
+	color: $text-large--color;
+	opacity: 1;
+	&--bold {
+		@extend .text-large--color;
+		font-weight: bold;
+	}
+}
