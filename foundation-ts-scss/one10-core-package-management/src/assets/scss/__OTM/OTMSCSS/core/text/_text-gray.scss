@@ -1,9 +1,0 @@
-.text-gray {
-	opacity: .54;
-    margin-bottom: 9px;
-    display: block;
-    &--bold {
-		@extend .text-gray;
-		font-weight: bold;
-	}
-}
