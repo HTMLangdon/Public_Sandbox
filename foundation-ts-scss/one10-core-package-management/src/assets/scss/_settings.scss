@@ -4,17 +4,72 @@
 // ---------
 
 
+
+
+
+
+
+// $base-theme:Default;
+// $skin-name:MICH;
+// $swatch-name:Default;
+// $border-radius: 0px;
+// $accent: #27509b;
+// $info: #27509b;
+// $success: #5ec232;
+// $warning: #fdce3e;
+// $error: #d51923;
+// $text-color: #212020;
+// $bg-color: #ffffff;
+// $base-text: #4e10b1;
+// $base-bg: #c0e1f9;
+// $hovered-text: #656565;
+// $hovered-bg: #9b9b9b;
+// $selected-text: #ffffff;
+// $selected-bg: #27509b;81
+// $series-a: #ff6358;
+// $series-b: #ffd246;
+// $series-c: #78d237;
+// $series-d: #28b4c8;
+// $series-e: #2d73f5;
+// $series-f: #aa46be;
+
+
+
+
+
+
 $michelin-primary-hex:#27509b;
 $michelin-disabled-txt-hex: #A9A9A9;
 $michelin-disabled-bg-hex: #DFDFDF;
-$michelin-item-hex:#C0E1F9;
+$michelin-item-hex:#c0e1f9;
 
-rgb(192,225,249)
+
 $michelin-primary-rgba: rgba(39, 80, 155, 1);
 $michelin-secondary-rgba: rgba(153, 153, 153, 1);
+$michelin-accent-primary-rgba:rgba(192,225,249,1);
+$michelin-accent-secondary-rgba: rgba(153, 153, 153, 1);
+
 $michelin-disabled-txt-rgba: rgba(169, 169, 169, 1);
 $michelin-disabled-bg-rgba: rgba(223, 223, 223, 1);
-$michelin-item-rgba:rgbab(192,225,249,1);
+
+
+
+$m--primary: rgba(39, 80, 155, 1);
+$m--secondary: rgba(153, 153, 153, 1);
+$m--accent---primary:rgba(192,225,249,1);
+$m--accent---secondary: rgba(151, 151, 151, 1);
+
+$m--color--black: rgba(0, 0, 0, 1);
+$m--disabled-txt: rgba(169, 169, 169, 1);
+$m--disabled-bg: rgba(223, 223, 223, 1);
+
+
+
+
+
+
+
+// $michelin-item-rgba:rgba(192,225,249,1);
 
 //determine input (radio/check) height
 $radioSize: 20px;
