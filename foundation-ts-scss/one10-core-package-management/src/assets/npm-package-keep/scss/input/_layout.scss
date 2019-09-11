@@ -1,0 +1,51 @@
+@import "../../modules/@progress/kendo-theme-default/scss/input/layout";
+
+@include exports("input/layout/checkbox-radiobutton/material") {
+
+    // animate tick mark with max-width transition
+
+    .k-checkbox-label::after {
+        font-size: $check-icon-size;
+        transition: max-width linear 280ms;
+        max-width: 0;
+        justify-content: flex-start;
+        text-indent: (($checkbox-size - $check-icon-size) / 2);
+
+        .k-checkbox:checked + &,
+        .k-checkbox:indeterminate + & {
+            max-width: $checkbox-size;
+        }
+    }
+
+    // Textarea Floating label
+    .k-textarea-wrapper {
+        padding-top: 0;
+
+        .k-textarea {
+            padding: $textarea-padding-y $textarea-padding-x;
+
+            &:focus {
+                border-width: $input-border-width;
+            }
+        }
+
+        > .k-label {
+            left: calc( #{$textarea-padding-x } + #{$input-border-width} );
+        }
+
+        &::after {
+            // disable input ripple
+            display: none;
+        }
+
+        .k-rtl &,
+        &[dir="rtl"] {
+            &.k-textarea-wrapper {
+                > .k-label {
+                    left: auto;
+                    right: calc( #{$textarea-padding-x } + #{$input-border-width} );
+                }
+            }
+        }
+    }
+}

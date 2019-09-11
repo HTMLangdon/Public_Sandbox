@@ -1,0 +1,30 @@
+@import "../../modules/@progress/kendo-theme-default/scss/window/layout";
+
+@include exports("window/layout/material") {
+
+    .k-window-actions {
+
+        > .k-button-icon {
+            width: auto;
+            height: auto;
+        }
+    }
+
+    .k-window-content {
+        line-height: 1.25;
+
+        .k-window-titlebar + & {
+            margin-top: -.5em;
+            padding-top: 0;
+        }
+    }
+
+    .k-dialog-button-group,
+    .k-edit-buttons,
+    .k-edit-field {
+        .k-button {
+            @extend .k-button-flat;
+        }
+    }
+
+}

@@ -1,0 +1,50 @@
+$popup-border-width: 0;
+$popup-header-padding: $padding-y-lg $padding-x-lg !default;
+$popup-header-font-size: $font-size-sm !default;
+$popup-header-text: rgba($base-text, .54) !default;
+$popup-filter-padding-x: $padding-x;
+
+@import "../../modules/@progress/kendo-theme-default/scss/popup/layout";
+
+@include exports("popup/layout/material") {
+
+    .k-popup {
+        .k-group-header {
+            text-transform: uppercase;
+        }
+
+        &.k-colorpicker-popup {
+            padding: 0;
+        }
+
+        .k-outer-group-header {
+            line-height: $line-height-lg;
+        }
+    }
+
+    .k-list-container {
+
+        .k-button {
+            box-shadow: none;
+
+            &::before {
+                display: none;
+            }
+        }
+
+    }
+
+    .k-list-filter {
+        height: auto;
+
+        & > .k-textbox {
+            border-width: 0 0 2px;
+            @include border-radius( $border-radius-lg );
+        }
+
+        & > .k-icon {
+            margin-top: -.5em;
+            transform: none;
+        }
+    }
+}

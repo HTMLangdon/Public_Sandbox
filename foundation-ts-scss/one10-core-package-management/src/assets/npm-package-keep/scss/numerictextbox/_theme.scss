@@ -1,0 +1,39 @@
+@import "../../modules/@progress/kendo-theme-default/scss/numerictextbox/theme";
+
+@include exports("numerictextbox/theme/material") {
+    .k-numerictextbox {
+        .k-numeric-wrap {
+            background-color: transparent;
+        }
+
+        .k-select {
+            opacity: 1;
+            width: $icon-size;
+            color: inherit;
+        }
+
+        .k-select,
+        .k-select:hover,
+        .k-state-hover .k-select {
+            background-color: transparent;
+        }
+
+        .k-link {
+            opacity: $icon-opacity;
+
+            // Hover state
+            &:hover {
+                opacity: $icon-hovered-opacity;
+            }
+
+            // Selected state
+            &.k-state-selected {
+                opacity: $icon-focused-opacity;
+                background-color: transparent;
+                box-shadow: none;
+            }
+        }
+
+
+    }
+}

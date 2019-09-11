@@ -1,0 +1,67 @@
+@include exports("editor/theme") {
+
+    .k-editor {
+        @include appearance( panel );
+
+        .k-editor-toolbar {}
+        .k-editable-area {
+            border-color: $panel-border;
+        }
+    }
+
+    // Inline Editor
+    .k-editor-inline {
+
+        // Hover & Actve state
+        &:hover,
+        &.k-state-active {
+            border-color: $panel-border;
+        }
+    }
+
+    // Editor toolbar
+    .k-editor-toolbar {
+        @include appearance( toolbar );
+
+        a.k-tool {
+            @extend .k-button-flat;
+            @include border-radius( 0 );
+
+            &::before {
+                @extend .k-button-overlay;
+            }
+        }
+
+        .k-tool-group.k-button-group {
+            box-shadow: none;
+        }
+    }
+
+
+    // Overflow anchor
+    .k-editor-toolbar .k-overflow-anchor {
+        padding: $toolbar-padding-y;
+        width: $toolbar-inner-calc-size;
+        height: $toolbar-inner-calc-size;
+    }
+
+    .k-editor-dialog {
+        .k-edit-label {
+            padding: calc( #{$padding-y} - #{$input-border-width} ) 0;
+        }
+    }
+
+
+    // Insert table
+    .k-ct-popup {
+        line-height: normal;
+
+        .k-status {
+            line-height: $line-height;
+        }
+
+        .k-state-selected {
+            @include fill( $selected-text, $selected-bg, $selected-border, none );
+        }
+    }
+}

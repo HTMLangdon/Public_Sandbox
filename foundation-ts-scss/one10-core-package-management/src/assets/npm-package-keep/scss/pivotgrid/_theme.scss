@@ -1,0 +1,162 @@
+@include exports("pivotgrid/theme") {
+    $pivotgrid-alt-bg: try-shade($grid-bg, .5) !default;
+    $pivotgrid-alt-text: $grid-text !default;
+
+    $pivotgrid-chrome-border: $grid-border !default;
+    $pivotgrid-container-bg: $grid-header-bg !default;
+
+    $pivotgrid-button-bg: try-shade($button-bg, 1) !default;
+    $pivotgrid-button-text: $button-text !default;
+    $pivotgrid-button-hover-bg: try-shade($button-bg, 2) !default;
+    $pivotgrid-button-hover-text: $button-text !default;
+    $pivotgrid-button-active-bg: try-shade($button-bg, 2) !default;
+    $pivotgrid-button-active-text: $button-text !default;
+
+    $pivotgrid-remove-bg: $pivotgrid-button-text !default;
+    $pivotgrid-remove-text: $pivotgrid-button-bg !default;
+
+    .k-fieldselector,
+    .k-pivot-layout .k-grid-footer,
+    .k-pivot-layout > tbody > tr:first-child > td:first-child {
+        background-color: $pivotgrid-alt-bg;
+        border-color: $pivotgrid-chrome-border;
+    }
+    .k-pivot-rowheaders .k-grid {
+        background: none;
+    }
+
+    .k-fieldselector .k-list-container {
+        background-color: $grid-bg;
+    }
+
+    .k-pivot-toolbar,
+    .k-pivot-table,
+    .k-fieldselector .k-list-container,
+    .k-fieldselector .k-columns > div,
+    .k-pivot-rowheaders > .k-grid td:first-child,
+    .k-pivot-table .k-grid-header .k-header.k-first {
+        border-color: $pivotgrid-chrome-border;
+    }
+
+    .k-pivot-rowheaders > .k-grid td,
+    .k-pivot-rowheaders > .k-grid td:first-child:not(.k-first) {
+        border-bottom-color: transparent;
+        border-left-color: $pivotgrid-chrome-border;
+    }
+
+    .k-pivot-rowheaders > .k-grid tr {
+        &:last-child td:not(.k-grid-footer),
+        &:nth-last-child(2) td:not(.k-grid-footer) {
+            border-bottom-color: $pivotgrid-chrome-border;
+        }
+    }
+
+    .k-pivot-rowheaders .k-grid tr .k-grid-footer {
+        border-bottom-width: 0;
+    }
+
+    .k-pivot-layout .k-grid .k-alt {
+        border-left-color: $pivotgrid-chrome-border;
+
+        + .k-alt {
+            border-left-color: transparent;
+        }
+    }
+
+    .k-fieldselector p,
+    .k-pivot-layout .k-button {
+        text-transform: none;
+    }
+
+    .k-pivot-layout .k-grid-footer,
+    .k-pivot-layout .k-grid .k-alt {
+        color: $pivotgrid-alt-text;
+        font-weight: bold;
+    }
+
+    .k-pivot-toolbar .k-button,
+    .k-fieldselector .k-list li.k-item {
+        @include fill(
+            $pivotgrid-button-text,
+            $pivotgrid-button-bg
+        );
+        box-shadow: unset;
+
+        .k-field-actions .k-setting-delete {
+            @include fill(
+                $pivotgrid-remove-text,
+                $pivotgrid-remove-bg
+            );
+            opacity: .75;
+            border-radius: 50%;
+            padding: 2px;
+        }
+
+        &:hover,
+        &.k-state-hover {
+            @include fill(
+                $pivotgrid-button-hover-text,
+                $pivotgrid-button-hover-bg
+            );
+
+            .k-field-actions .k-setting-delete {
+                opacity: 1;
+            }
+        }
+
+        // Pressed state
+        &:active,
+        &.k-state-active {
+            @include fill(
+                $pivotgrid-button-active-text,
+                $pivotgrid-button-active-bg
+            );
+        }
+
+        // Focused state
+        &:focus,
+        &.k-state-focused {
+            box-shadow: $button-focused-shadow;
+        }
+
+        &.k-empty {
+            background-color: $pivotgrid-container-bg;
+            border: 0;
+        }
+    }
+
+    // Loading indicator
+    .k-fieldselector {
+        .k-i-loading {
+            border-color: $header-bg;
+        }
+
+        .k-i-loading::before,
+        .k-i-loading::after {
+            background-color: $header-bg;
+        }
+    }
+
+    .k-fieldselector,
+    .k-pivot {
+        .k-i-arrow-60-right,
+        .k-i-arrow-e,
+        .k-i-sarrow-e,
+        .k-i-expand,
+        .k-i-expand-e {
+            &::before {
+                content: "\E014";
+            }
+        }
+
+        .k-i-arrow-60-down,
+        .k-i-arrow-s,
+        .k-i-sarrow-s,
+        .k-i-collapse,
+        .k-i-expand-s {
+            &::before {
+                content: "\E015";
+            }
+        }
+    }
+}

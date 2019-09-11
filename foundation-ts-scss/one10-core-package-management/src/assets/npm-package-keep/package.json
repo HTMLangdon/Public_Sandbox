@@ -1,0 +1,73 @@
+{
+  "_from": "@progress/kendo-theme-material",
+  "_id": "@progress/kendo-theme-material@3.2.0",
+  "_inBundle": false,
+  "_integrity": "sha512-frrvxlI3nLcGX62zjg12aW0B7AhUe6w3akecS7reVPsljfMI3cm2HSleNfgqQaADtlxk0t2XgSZ+sQzaY6CSmA==",
+  "_location": "/@progress/kendo-theme-material",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "tag",
+    "registry": true,
+    "raw": "@progress/kendo-theme-material",
+    "name": "@progress/kendo-theme-material",
+    "escapedName": "@progress%2fkendo-theme-material",
+    "scope": "@progress",
+    "rawSpec": "",
+    "saveSpec": null,
+    "fetchSpec": "latest"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/@progress/kendo-theme-material/-/kendo-theme-material-3.2.0.tgz",
+  "_shasum": "0a0a3a419694ded65383ed354f3ea2a29efcbd90",
+  "_spec": "@progress/kendo-theme-material",
+  "_where": "/Users/ujxl846/_langdon/CultivateCreate/Repositories/Sandbox/foundation-ts-scss/one10-core-package-management",
+  "author": {
+    "name": "Progress"
+  },
+  "bugs": {
+    "url": "https://github.com/telerik/kendo-themes/issues"
+  },
+  "bundleDependencies": false,
+  "deprecated": false,
+  "description": "Material theme for Kendo UI",
+  "devDependencies": {
+    "@progress/kendo-theme-default": "^4.2.0",
+    "@progress/kendo-theme-tasks": "^0.2.0",
+    "gulp": "^4.0.2"
+  },
+  "homepage": "https://github.com/telerik/kendo-themes#readme",
+  "keywords": [
+    "Kendo UI",
+    "Material",
+    "Material design",
+    "Theme"
+  ],
+  "license": "Apache-2.0",
+  "main": "dist/all.css",
+  "name": "@progress/kendo-theme-material",
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/telerik/kendo-themes.git"
+  },
+  "sass": "scss/all.scss",
+  "scripts": {
+    "api": "gulp api",
+    "api-check": "npm run api && git diff --exit-code --quiet -- docs/ || (echo -e '\\033[0;31mERROR: API docs are out of date' && exit 1)",
+    "build": "gulp sass",
+    "dart": "gulp dart",
+    "embed-assets": "gulp assets",
+    "lint": "gulp lint",
+    "postpublish": "rm -rf modules && git checkout scss",
+    "prepublishOnly": "bash ./build/embed-dependencies '@progress/kendo-theme-default' && npm run build && npm run swatches",
+    "swatches": "gulp swatches",
+    "test": "npm run lint && npm run build && npm run api-check",
+    "watch": "gulp sass:watch"
+  },
+  "version": "3.2.0"
+}

@@ -1,0 +1,35 @@
+@include exports("action-buttons/layout") {
+
+    .k-action-buttons {
+        padding: 8px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: flex-end;
+        align-items: center;
+        align-content: flex-end;
+        clear: both;
+
+        .k-button {
+            @extend .k-button-flat;
+            border-radius: $border-radius;
+            flex: 0 1 auto;
+            align-self: center;
+            border-style: none;
+            box-shadow: none;
+            min-width: auto;
+
+            &::before {
+                display: block;
+            }
+        }
+        .k-button + .k-button {
+            margin-left: $padding-x-sm;
+        }
+        .k-button.k-left {
+            float: none;
+        }
+
+    }
+
+}

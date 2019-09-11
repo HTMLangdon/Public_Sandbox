@@ -1,0 +1,13 @@
+@include exports("autocomplete/theme") {
+
+    .k-autocomplete {
+        .k-input {
+            color: $input-text;
+        }
+
+        &.k-state-focused {
+            @include appearance( focused-input );
+        }
+    }
+
+}
