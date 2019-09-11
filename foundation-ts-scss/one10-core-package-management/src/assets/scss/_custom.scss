@@ -11,10 +11,14 @@ h2 {
 	// margin: 0 0 0 0;
 	// padding: 20px 0 0 0;
 }
-
-span {
-	display: inline-block;
+fieldset {
+	outline: 0;
+	border: none;
 }
+
+// span {
+// 	display: inline-block;
+// }
 
 // TEXT that is preceeded or a notation of text with an asterisk
 .notation-body {
@@ -331,84 +335,57 @@ ul {
 	}
 }
 
-/*
+// /*
 
+// .k-widget,
+// .k-widget,
+// .k-menu,
+// .k-panelbar,
+// .k-tabstrip,
+// .k-header,
+// .k-link,
+// .k-button,
+// .k-input,
+// .k-textbox,
+// .k-input,
+// .k-checkbox,
+// .k-group,
+// .k-content,
+// .k-popup,
+// .k-icon,
+// .k-sprite,
+// .k-image,
+// .k-item,
+// .k-first,
+// .k-last,
+// .k-item,
+// .k-state-default,
+// .k-state-hover,
+// .k-state-focused,
+// .k-state-active,
+// .k-link,
+// .k-state-selected,
+// .k-state-disabled,
+// .k-state-error {
+// list-style: none;
+// text-decoration: none;
+// // font-size: 100%;
+// font-family: OpenSans;
 
+// margin: 0 0 0 0;
+// padding: 0 0 0 0;
+// border-top-left-radius: 0px;
+// border-top-right-radius: 0px;
+// border-bottom-left-radius: 0px;
+// border-bottom-right-radius: 0px;
+// border: 1px solid $michelin-secondary-rgba;
+// box-shadow: none;
+// transition: .25s ease-in-out;
+// height: 40px;
 
+// }
 
-.k-widget,
-.k-widget,
-.k-menu,
-.k-panelbar,
-.k-tabstrip,
-.k-header,
-.k-link,
-.k-button,
-.k-input,
-.k-textbox,
-.k-input,
-.k-checkbox,
-.k-group,
-.k-content,
-.k-popup,
-.k-icon,
-.k-sprite,
-.k-image,
-.k-item,
-.k-first,
-.k-last,
-.k-item,
-.k-state-default,
-.k-state-hover,
-.k-state-focused,
-.k-state-active,
-.k-link,
-.k-state-selected,
-.k-state-disabled,
-.k-state-error {
-list-style: none;
-text-decoration: none;
-// font-size: 100%;
-font-family: OpenSans;
-
-margin: 0 0 0 0;
-padding: 0 0 0 0;
-border-top-left-radius: 0px;
-border-top-right-radius: 0px;
-border-bottom-left-radius: 0px;
-border-bottom-right-radius: 0px;
-border: 1px solid $michelin-secondary-rgba;
-box-shadow: none;
-transition: .25s ease-in-out;
-height: 40px;
-
-}
-
-
-*/
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+// */
 
 [type='text'],
 [type='textarea'],
@@ -425,45 +402,52 @@ height: 40px;
 [type='time'],
 [type='url'],
 [type='color'],
-textarea {
-    &.k-input{
-        border: 1px solid $michelin-secondary-rgba;
-        box-shadow: none;
-        transition: .25s ease-in-out;
-        height: 40px;
-        margin: 0 0 0 0;
-        padding:0 0 0 0;
+textarea,
+select {
+	border: 1px solid $michelin-secondary-rgba;
+	&.k-input {
+		box-shadow: none;
+		transition: .25s ease-in-out;
+		height: 40px;
+		margin: 0 0 0 0;
+		padding: 0 0 0 0;
+	}
 
-    }
+	&:hover {
+		// border:1px solid light.en($michelin-secondary-rgba, 30%);
+		// box-shadow: inset 0 1px 2px $michelin-secondary-rgba;
+		box-shadow: inset 0 1px 2px darken($michelin-secondary-rgba, 8%);
+	}
 
+	&:focus {
+		box-shadow: inset 0 1px 2px darken($michelin-secondary-rgba, 5%);
+		border: 1px solid $michelin-secondary-rgba;
+	}
+}
 
-    &:hover {
-        // border:1px solid light.en($michelin-secondary-rgba, 30%);
-        // box-shadow: inset 0 1px 2px $michelin-secondary-rgba;
-    }
-
-    &:focus {
-        box-shadow: inset 0 1px 2px darken($michelin-secondary-rgba, 5%);
-        border: 1px solid $michelin-secondary-rgba;
-    }
+.k-multiselect-wrap {
+	border: 1px solid #999;
+	padding-right: 0px;
 }
 
 // override input && textarea height (was 40)
 textarea {
-    min-height: 84px;
+	min-height: 84px;
+	resize: none;
+}
+select {
 }
 
+// span {
+//     display: inline-block;
+// }
 
-span {
-    display: inline-block;
-}
+// .notation-body {
+//     margin: 7px 0 0 0;
+//     ;
+//     font-size: 12px;
 
-.notation-body {
-    margin: 7px 0 0 0;
-    ;
-    font-size: 12px;
-
-    &.italic {
-        font-style: italic;
-    }
-}
+//     &.italic {
+//         font-style: italic;
+//     }
+// }

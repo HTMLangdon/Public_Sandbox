@@ -9,11 +9,12 @@ $michelin-disabled-txt-hex: #A9A9A9;
 $michelin-disabled-bg-hex: #DFDFDF;
 $michelin-item-hex:#C0E1F9;
 
+rgb(192,225,249)
 $michelin-primary-rgba: rgba(39, 80, 155, 1);
 $michelin-secondary-rgba: rgba(153, 153, 153, 1);
 $michelin-disabled-txt-rgba: rgba(169, 169, 169, 1);
 $michelin-disabled-bg-rgba: rgba(223, 223, 223, 1);
-$michelin-item-rgba:rgba(192, 245, 249,1);
+$michelin-item-rgba:rgbab(192,225,249,1);
 
 //determine input (radio/check) height
 $radioSize: 20px;

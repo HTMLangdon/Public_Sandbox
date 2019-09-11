@@ -39,12 +39,11 @@ hello('index - ts');
 hellothere('index - ts');
 
 $(document).ready(function(e) {
-	toggleDispatcher = new ToggleDispatcher();
-
 	let stepperContainer = '.stepper ul.steps';
 	let stepContentContainer = '#steps-content';
+	
+	//not active as of now. functionality and identifying ccorrect components functionality exists -just not the toggling 'X'
+	toggleDispatcher = new ToggleDispatcher();
+
 	STEPPER.setup(stepperContainer, stepContentContainer);
-
-
-
 });

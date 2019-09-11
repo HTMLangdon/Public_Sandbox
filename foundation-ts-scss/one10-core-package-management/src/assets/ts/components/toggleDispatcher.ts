@@ -105,10 +105,10 @@ class ToggleDispatcher {
 		console.log(`_context_inputs:${_context_inputs}`);
 		console.log(_context_inputs);
 
-		document.addEventListener('blur', this._onInputVisited, true);
-		document.addEventListener('click', this._onInputVisited, true);
-		document.addEventListener('onfocusin', this._onInputVisited);
-		document.addEventListener('onfocusout', this._onInputVisited);
+		// document.addEventListener('blur', this._onInputVisited, true);
+		// document.addEventListener('click', this._onInputVisited, true);
+		// document.addEventListener('onfocusin', this._onInputVisited);
+		// document.addEventListener('onfocusout', this._onInputVisited);
 
 		// Array.from(e.children).indexOf(theChild)/
 
